@@ -1,0 +1,395 @@
+@import 'global_settings'
+
+//------------------main-page-pop-up----------------------//
+
+.section
+    &.main-pop_up
+        padding: 40px 0
+        background-image: url(../img/main_page/pop_up-main-page.png)
+        background-size: cover
+        background-position: center
+        & .container
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            & .form_box
+                padding-right: 35px
+                margin: auto
+                width: 50%
+                text-align: center
+                & .auth_form
+                    & input
+                        position: relative
+                        border: none
+                        background-color: $orange
+                        border-bottom: 1px solid rgba(#ffffff, .2)
+                        margin-bottom: 25px
+                        &.auth
+                            color: #ffffff
+                            font-size: 16px
+                            width: 100%
+                            padding-bottom: 10px
+                            &::placeholder
+                                font-weight: 300
+                                color: #ffffff
+                    & input
+                        &:focus
+                            outline: none
+                            &:placeholder
+                                display: none
+                    & button
+                        &.menu_item_btn
+                            width: 110px
+                            height: 44px
+                            background-color: #ffffff
+                            color: $orange
+                            margin-bottom: 30px
+                            text-transform: uppercase
+                            &.confirm
+                                width: 150px
+                & .reference
+                    color: #ffffff
+                    font-size: 14px
+                    & h4
+                        line-height: 26px
+                        margin-bottom: 8px
+                        font-weight: 400
+                        margin: 0
+                    & a
+                        padding-left: 5px
+                        color: #ffffff
+                        text-decoration: underline
+            & .advantages_box
+                padding-left: 30px
+                border-left: 1px solid rgba(#000000, .1)
+                text-align: center
+                & .advantage
+                    text-align: left
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 30px
+                    & .advantage_description
+                        margin-right: auto
+                    & img
+                        margin-right: 20px
+                        width: 15%
+                        height: auto
+                    & h2
+                        margin-bottom: 7px
+                        color: #ffffff
+                        font-size: 12px
+                    & p
+                        color: #ffffff
+                        font-size: 12px
+                & a
+                    color: #ffffff
+                    font-size: 14px
+                    text-decoration: underline
+
+    //---------------------- address-pop-up-----------------------//
+    
+.section
+    &.address_pop-up
+        padding-bottom: 40px
+        background-image: url(../img/pop-up_address/bg_bottom.png)
+        background-size: cover
+        background-position: center
+        height: 304px
+        & .address_title
+            background-image: url(../img/pop-up_address/bg_top.png)
+            background-size: cover
+            background-position: bottom
+            height: 65px
+            width: 100%
+            position: relative
+            top: 0
+            margin-bottom: 15px
+            & .container
+                position: relative
+                text-align: center
+                & h2
+                    width: 100%
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, 110%)
+                    font-size: 14px
+                    color: $orange
+            & img
+                position: relative
+                top: -5px
+        & .container
+            & .address_box
+                margin: auto
+                text-align: center
+                & .city
+                    margin-bottom: 30px
+                    text-align: center
+                    & h2
+                        line-height: 24px
+                        font-size: 14px
+                        color: #ffffff
+                    & a
+                        color: #ffffff
+                        opacity: 0.7
+                        font-size: 14px
+                        text-decoration: underline
+                & .address_form
+                    position: relative
+                    & input
+                        border: none
+                        color: #000000
+                        background-color: #ffffff
+                        margin-bottom: 25px
+                        &.address
+                            border-radius: 4px
+                            color: #000000
+                            font-size: 16px
+                            width: 100%
+                            padding: 6px 0 6px 25px
+                            &::placeholder
+                                font-weight: 300
+                                color: #000000
+                    &::after
+                        position: absolute
+                        display: block
+                        content: ''
+                        width: 32px
+                        height: 20px
+                        background-image: url(../img/pop-up_address/map.svg)
+                        background-size: auto
+                        background-repeat: no-repeat
+                        background-position: center
+                        left: 0
+                        top: 16%
+                        transform: translateY(-50%)
+                                
+                    & button
+                        &.menu_item_btn
+                            width: 110px
+                            height: 44px
+                            background-color: #ffffff
+                            color: $orange
+
+    //---------------------- thankful_confirm-pop-up-----------------------//
+    
+.section
+    &.thankful_pop-up
+        padding: 40px 0
+        background-image: url(../img/main_page/pop_up-main-page.png)
+        background-size: cover
+        background-position: center
+        & .container
+            max-width: 337px    
+            & .thankful_box
+                color: #ffffff
+                text-align: center
+                & span
+                    font-weight: 700
+                    font-size: 20px
+                & h1
+                    font-size: 20px
+                & p
+                    font-size: 12px
+                    opacity: 0.7
+                    margin-top: 8px
+                & .socials
+                    padding-top: 30px
+                    margin: 0 auto
+                    width: 38%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    flex-wrap: wrap
+                    & img
+                        margin-bottom: 10px
+                        width: 30%
+                        max-width: 36px
+                        height: auto
+                        opacity: 0.3
+                        &:last-child
+                            margin: 0 auto
+                        &:hover
+                            opacity: 1
+
+    //---------------------- cart-pop-up-----------------------//
+    
+.section
+    &.cart_pop-up
+        padding-bottom: 40px
+        background-image: url(../img/main_page/pop_up-main-page.png)
+        background-size: cover
+        background-position: center
+        & .restaurant_title
+            background-image: url(../img/pop-up_address/bg_top.png)
+            background-size: cover
+            background-position: center
+            height: 65px
+            width: 100%
+            position: relative
+            top: -5px
+            margin-bottom: 15px
+            & .container
+                max-width: 890px
+                position: relative
+                text-align: center
+                & h2
+                    width: 100%
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, 110%)
+                    font-size: 14px
+                    color: $orange
+        & .container
+            max-width: 890px
+            & .cart_box
+                padding: 15px
+                background-color: $orange
+                margin-bottom: 2%
+                & .dish_attributes
+                    display: flex
+                    justify-content: space-between
+                    color: #ffffff
+                    margin-bottom: 10px
+                    font-size: 16px
+                    font-weight: 700
+                    & span
+                        &:nth-child(1)
+                            width: 15%
+                            text-align: center
+                        &:nth-child(2)
+                            margin-left: 10%
+                            width: 50%
+                        &:nth-child(3)
+                            width: 15%
+                        &:nth-child(4)
+                            width: 15%
+                & .cart_dish
+                    margin-bottom: 15px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    & .small_screen_description
+                        color: #ffffff
+                        display: none
+                        & span
+                            font-size: 16px
+                            opacity: .6
+                        & .sm_description
+                            & p
+                                font-size: 12px
+                                opacity: .4
+                            & h2
+                                font-size: 16px
+                    & .dish_description
+                        width: 50%
+                        & h2
+                            font-size: 20px
+                            color: #ffffff
+                        & p
+                            font-size: 12px
+                            color: rgba(#ffffff, 0.4)
+                        & span
+                            color: rgba(#ffffff, 0.5)
+                            font-size: 16px
+                    & .dish_img
+                        width: 15%
+                        height: auto
+                        & img
+                            width: 100%
+                            height: auto
+                        & .small_screen_price_amount
+                            display: none
+                            & h3
+                                text-align: center
+                                font-size: 14px
+                                color: #ffffff
+                    & .dish_price
+                        text-align: center
+                        width: 10%
+                        font-weight: 700
+                        color: #ffffff
+                    & .dish_amount
+                        width: 19%
+                        color: #ffffff
+                        text-align: center
+                        font-weight: 700
+                        font-size: 14px
+                & .cart_totall
+                    display: flex
+                    justify-content: space-between
+                    color: #ffffff
+                    border-top: 1px solid #FFFFFF
+                    border-bottom: 1px solid #FFFFFF
+                    padding: 10px 0
+                    & p
+                        font-size: 16px
+                        font-weight: 700
+                        width: 70%
+                    & span
+                        font-size: 14px
+                        font-weight: 700
+                        width: 30%
+                & .post_price_box
+                    display: flex
+                    justify-content: space-between
+                    color: #ffffff
+                    margin-bottom: 10px
+                    & .post_description
+                        margin-left: 17%
+                        width: 60%
+                        & h2
+                            font-size: 20px
+                    & .post_price
+                        font-weight: 700
+                        font-size: 14px
+                        width: 20%
+                        & span
+
+                    & .post_amount
+                        font-weight: 700
+                        font-size: 14px
+                        width: 13%
+            & .payment
+                margin: 30px auto
+                text-align: center
+                & select 
+                    width: 220px
+                    height: 32px
+                    font-size: 12px
+                    padding-left: 10px
+                    text-decoration: none
+                    color: #000000
+                    border-radius: 4px
+                    background-color: #ffffff
+                    background-size: 7px
+                    background-position:  right 10px center
+                    border: none
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    appearance: none    
+                    background-image: url(../img/cart_pop-up/arrow.svg)
+                    background-repeat: no-repeat
+                    right: 0
+                    cursor: pointer
+                    line-height: 1.1
+                    & option
+                        background-color: #ffffff
+                        cursor: pointer
+                    &:focus
+                        outline: none
+                & span
+                    color: #ffffff
+                    font-weight: 700
+                    font-size: 16px
+                    padding-right: 5px
+            & button
+                &.menu_item_btn
+                    display: block
+                    background-color: #ffffff
+                    color: $orange
+                    width: 150px
+                    height: 44px
+                    margin:  0 auto

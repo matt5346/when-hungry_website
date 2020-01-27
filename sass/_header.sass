@@ -1,0 +1,262 @@
+.header
+    padding-top: 83px
+
+    .top_line
+        position: absolute
+        top: 5px
+        left: 0
+        height: 90px
+        width: 100%
+        background-image: url(../img/restrunt_card/header/header_white_line.png)
+        background-size: cover
+        z-index: 1000
+        &.fixed
+            position: fixed
+        &:before
+            position: absolute
+            content: ''
+            width: 100%
+            height: 7px
+            top: -6px
+            left: 0
+            background: white
+        .container
+            height: 90%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &:before
+                content: none
+            .burger
+                display: none
+            .logo
+                margin-top: 8px
+                width: 40%
+                height: auto
+                img 
+                    width: 100%
+                    height: auto
+            .left_side
+                width: 50%
+                display: flex
+                align-items: center
+                justify-content: space-between
+                height: auto
+                & .options
+                    margin-left: 10px
+                    display: flex
+                    justify-content: space-between
+                    align-items: baseline
+                    & .select_wrap
+                        display: flex
+                        &.city
+                            margin-right: 8px
+                            & .select
+                                width: 150px
+                                height: 23px
+                                font-size: 12px
+                                padding-left: 10px
+                                text-decoration: none
+                                color: #000000
+                                border-radius: 4px
+                                background-color: #ffffff
+                                background-size: 7px
+                                background-position:  right 10px center
+                                border: none
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                                -webkit-appearance: none
+                                -moz-appearance: none
+                                appearance: none    
+                                background-image: url(../img/restrunt_card/header/arrow_down.svg)
+                                background-repeat: no-repeat
+                                right: 0
+                                cursor: pointer
+                                line-height: 1.1
+                                & option
+                                    background-color: #ffffff
+                                    cursor: pointer
+                                &:focus
+                                    outline: none
+                            & img
+                                max-width: 15px
+                                height: auto
+                    & .select_wrap
+                        &.language
+                            & .select
+                                width: 56px
+                                height: 23px
+                                font-size: 12px
+                                padding-left: 10px
+                                text-decoration: none
+                                color: #000000
+                                border-radius: 4px
+                                background-color: #ffffff
+                                background-size: 7px
+                                background-position:  right 10px center
+                                border: none
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                                -webkit-appearance: none
+                                -moz-appearance: none
+                                appearance: none    
+                                background-image: url(../img/restrunt_card/header/arrow_down.svg)
+                                background-repeat: no-repeat
+                                right: 0
+                                cursor: pointer
+                                line-height: 1.1
+                                & option
+                                    background-color: #ffffff
+                                    cursor: pointer
+                                &:focus
+                                    outline: none
+                            & img
+                                max-width: 34px
+                                height: auto
+
+            .right_side
+                width: 55%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                height: 100%
+    .header_img
+        height: 660px
+        background-image: url(../img/restrunt_card/header/main_bg.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        img 
+            margin-top: 52px
+        &.main_page
+            & .map_box
+                display: none
+                height: 100%
+                width: 100%
+                position: relative
+                & .map_settings
+                    .map_address_form
+                        position: absolute
+                        top: 30px
+                        right: 10px
+                        left: 10px
+                        height: 650px
+                        width: auto
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: space-between
+                        & .map_input
+                            width: 100%
+                            height: 36px
+                            border-radius: 
+                            padding: 5px
+                            border: none
+                            background-image: url(../img/restrunt_card/header/map_arrow.svg)
+                            background-position: 97% 50%
+                            background-repeat: no-repeat
+                            background-size: auto
+                            &::placeholder
+                                opacity: .7
+                        & .menu_item_btn
+                            &.change_address
+                                width: 190px
+                                height: 32px
+                                color: $orange
+                                background: #ffffff
+                            &.submit_address
+                                width: 100px
+                                height: 32px
+    & .lk_nav
+        width: 100%
+        background: $orange
+        display: flex
+        justify-content: space-between
+
+.header_menu
+    display: none
+    justify-content: space-between
+    flex-direction: column
+    position: fixed
+    top: 0
+    width: 70%
+    height: 100%
+    border-right: 1px solid #ffffff
+    background: $orange
+    padding: 10px 20px 0 20px
+    overflow-y: auto
+    z-index: 1001
+    transition: all .3s ease-in-out
+    &.active
+        display: flex
+    & .menu_links_box
+        display: flex
+        flex-direction: column
+        & .links_item
+            border-bottom: 1px solid #ffffff
+            padding-bottom: 15px
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+            & img
+                margin-right: 10px
+            & .link
+                color: #ffffff
+    & .menu_top
+        display: flex
+        flex-direction: column
+        margin-bottom: auto
+        & .header_img_logo
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 20px
+            & img
+                width: 50%
+                height: auto
+    & .menu_bottom
+        display: flex
+        flex-direction: column
+        margin-top: auto
+
+.burger
+    z-index: 1002
+    position: absolute
+    left: 2%
+    height: 30px
+    width: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    &.menu
+        top: 10px
+        left: unset
+        right: 10px
+        display: none
+        &.bur_active
+            display: block
+            .burger_line
+                &:nth-child(1)
+                    transform: rotate(405deg) translate( 7px, 8px)
+                    background: #ffffff
+                &:nth-child(2)
+                    opacity: 0
+                    transform: translateX(-100%)
+                &:nth-child(3)
+                    transform: rotate(-410deg) translate( -6px, 3px)
+                    background: #ffffff
+    .burger_line
+        height: 2px
+        width: 100%
+        background: $orange
+        transition: 0.6s
+    &.active
+        display: none
+    &.bur_active
+        display: block
+        .burger_line
+            &:nth-child(1)
+                transform: rotate(405deg) translate( 7px, 8px)
+                background: black
+            &:nth-child(2)
+                opacity: 0
+                transform: translateX(-100%)
+            &:nth-child(3)
+                transform: rotate(-410deg) translate( 6px, -7px)
+                background: black

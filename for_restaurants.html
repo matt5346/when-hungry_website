@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Карточка ресторана</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top_line" id="top_line">
+            <div class="container">
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/restrunt_card/header/top_line_logo.svg" alt="">
+                        </a>
+                    
+                    </div>
+                    
+                    <div class="options">
+
+                        <div class="select_wrap city">
+                                <img src="img/restrunt_card/header/map_icon.svg" alt="">
+                                <select class="select" name="city" id="city">
+                                    <option value="city1">Москва</option>
+                                    <option value="city2">Санкт-Петербург</option>
+                                    <option value="city3">Воронеж</option>
+                                    <option value="city4">Краснодар</option>
+                                    <option value="city5">Тула</option>
+                                    <option value="city6">Ростов</option>
+                            
+                                </select>
+                            </div>
+        
+                        <div class="select_wrap language">
+                            <img src="img/restrunt_card/header/icon-globe.svg" alt="">
+                            <select class="select" name="language" id="language">
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                                <option value="kz">KZ</option>
+                        
+                            </select>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                 
+                <!-- <div class="search">
+                    <input  class="search_inp" type="text" placeholder="поиск">
+                    <div class="search_logo">
+                        <img src="img/restrunt_card/header/search.svg" alt="">
+                    </div>
+
+                </div>   -->
+                <div class="right_side">
+                    <div class="enter_sign_up">
+                        <p>Вход/Регистрация</p>
+                        <div class="person_icon">
+                            <img src="img/restrunt_card/header/person.svg" alt="">
+                        </div>
+                    
+                    </div>
+                    <button class="basket_btn"><span>Корзина</span></button>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="header_img" id="header_img">
+            <div class="container">
+                <div class="header_img_logo">
+                    <img src="img/restrunt_card/header/header_logo.svg" alt="header_logo">
+                </div>
+            </div>
+            
+
+        </div>
+
+    </header>
+    <main class="main" id="main">
+
+        <!---------------Blog-------------------->
+
+        <div class="main_top_line">
+                <div class="container">
+                    <div class="top_line_inner">
+                        <h1>Мы просто заново изобрели доставку еды!</h1>
+                        <p>сервис доставки еды ХОЧУ-ПОЕСТЬ предлагает Вам увеличить прибыль Вашего ресторана</p>
+                    </div>
+                </div>
+        </div>
+
+        <section class="section s-restaurants_form">
+            <div class="container">
+
+
+                    <form action="" class="restaurant_form" method="POST">
+                        
+                        <div class="main_form_box">
+                            <div class="form_title">
+                                <h1>Схема работы простая и понятная:
+                                <br>Мы вам - заказы, Вы нам - % от заказа. Какой? 
+                                Решаете Вы!</h1>
+                            </div>
+
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    Название ресторана <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+    
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    Ваше имя  <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+    
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    Город <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+    
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    Тел. номер <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+    
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    E-mail <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+    
+                            <div class="input_order">
+                                <div class="placeholder">
+                                    Веб-сайт  <span>*</span>
+                                </div>
+    
+                                <input type="text" name="" class="order" required>
+                            </div>
+                        </div>
+
+
+                        <div class="extra_form_toggle" id="extra_form_toggle_box">
+                            <p><strong>?</strong> Вы можете дозаполнить анкету в любое время в личном кабинете. Не обязательно делать это прямо сейчас</p>
+
+                            <div class="btn_box">
+                                <span>Заполнить сейчас</span>
+                                <button type="button" class="choice_toggle" id="restaurant_extra_form_toggle"></button>
+                            </div>
+                        </div>
+
+                        <div class="extra_info_box">
+                            <div class="extra_restaurant_info">
+
+                                <div class="info_row file">
+                                    <span class="input_description">Логотип</span>
+                                    
+                                    <input class="file_input" id="file_avatar" name="file_avatar" type="file">
+                                    <label for="file_avatar">Прикрепить</label>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Адрес Службы доставки</span>
+                                    <input type="text" class="max">
+                                    <button class="post_service_adding">+</button>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Вид кухни</span>
+                                    <select class="select_info" name="amount">
+                                        <option value="1">Любой</option>
+                                        <option value="2">Такой</option>
+                                    </select>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Время приёма заказов</span>
+                                    <input type="text" class="date">
+                                    <input type="text" class="date">
+                                </div>
+                    
+
+                                <div class="info_row">
+                                    <span class="input_description">Минимальная сумма заказа</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Стоимость доставки по зонам</span>
+                                    <div class="notice_box">
+                                        <input class="max" type="text">
+                                        <p class="input_notice"><strong>*</strong> - прикрепите ссылку с информацией о зонах или опишите их</p>
+                                    </div>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Бесплатная доставка от</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Номер call-центра</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Номер для смс-информирования</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">E-mail для информирования</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Среднее время доставки (минут)</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Оплата курьеру картой</span>
+                                    <select class="select_info" name="amount">
+                                        <option value="1">Любой</option>
+                                        <option value="2">Такой</option>
+                                    </select>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Возможность оплаты по эквайрингу</span>
+                                    <select class="select_info" name="amount">
+                                        <option value="1">Любой</option>
+                                        <option value="2">Такой</option>
+                                    </select>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Скидка при самовывозе, %</span>
+                                    <div class="notice_box">
+                                        <input type="text">
+                                        <p class="input_notice"><strong>*</strong> - если скидка не предусмотрена - укажите 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Можно оплатить бонусами, %</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Скидка на День Рождения, %</span>
+                                    <div class="notice_box">
+                                        <input type="text">
+                                        <p class="input_notice"><strong>*</strong> - если скидка не предусмотрена - укажите 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Возможность проведения акций</span>
+                                    <select class="select_info" name="amount">
+                                        <option value="1">Любой</option>
+                                        <option value="2">Такой</option>
+                                    </select>
+                                </div>
+
+                                <div class="info_row">
+                                    <span class="input_description">Особенности Вашего заведения</span>
+                                    <input type="text" class="max">
+                                </div>
+
+                                <div class="info_row file">
+                                    <span class="input_description">Карточка предприятия</span>
+                                    
+                                    <input class="file_input" id="file_avatar" name="file_avatar" type="file">
+                                    <label for="file_avatar">Прикрепить</label>
+                                </div>
+
+                                <div class="info_agreement">
+                                    <input type="checkbox" name="" id="post">
+                                    <label for="post" id="info_label"></label>
+                                    Свяжитесь со мной
+                                </div>
+
+                                <div class="info_agreement">
+                                    <input type="checkbox" name="" id="post">
+                                    <label for="post" id="info_label"></label>
+                                    Я соглашаюсь с условиями обработки моих данных компанией ООО 
+                                    «Эчив Райт Нау» согласно положениям Федерального закона "О персональных данных" 
+                                    от 27.07.2006 N 152-ФЗ, а также на получение информационных сообщений от ООО «Эчив Райт Нау»
+                                        в связи с выполнением настоящей заявки.
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="menu_item_btn">Присоединиться</button>
+                    </form>
+
+            </div>
+        </section>
+
+        <section class="section s-choose_us">
+            <div class="container">
+                <h1>ХОЧУ-ПОЕСТЬ - ЭТО ПРОСТАЯ И ПОНЯТНАЯ РАБОТА ДЛЯ ВАШЕЙ КУХНИ И ДОСТАВКИ</h1>
+                <div class="choose_box">
+
+                    <div class="choose_card">
+                        <img src="./img/for_restaurants/icon_list.svg" alt="">
+                        <p>четкая и понятная система расчета в реальном времени</p>
+                    </div>
+
+                    <div class="choose_card">
+                        <img src="./img/for_restaurants/icon_integr.svg" alt="">
+                        <p>интеграция с системой заказов ресторана</p>
+                    </div>
+
+                    <div class="choose_card">
+                        <img src="./img/for_restaurants/icon_group.svg" alt="">
+                        <p>удобные и быстрые уведомления</p>
+                    </div>
+
+                    <div class="choose_card">
+                        <img src="./img/for_restaurants/icon_wallet.svg" alt="">
+                        <p>любой способ оплаты</p>
+                    </div>
+
+                    <div class="choose_card">
+                        <img src="./img/for_restaurants/icon_ru.svg" alt="">
+                        <p>выгодные условия благодарности за нашу работу</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="section s-tab">
+            <div class="container">
+
+                <div class="tab_box">
+                    <img src="./img/for_restaurants/tab.png" alt="">
+
+                    <div class="statistic">
+                        <div class="inner">
+                            <h1 class="orange">в 25 раз</h1>
+                            <p>выросло количество заказов еды с доставкой 
+                            на дом в 2017 году в ресторанах по данным "Яндекса"</p>
+                        </div>
+                        <div class="inner">
+                            <h1 class="green">1200 руб</h1>
+                            <p>средний чек на доставку еды. И это только через “Яндекс”</p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+    
+            </div>
+        </section>
+
+        <section class="section s-mission">
+            <div class="container">
+                <h1>МИССИЯ ХОЧУ-ПОЕСТЬ</h1>
+
+                <div class="point">
+                    <div class="point_bg">
+                        <img src="./img/for_restaurants/point1.png" alt="">
+                        <span>1</span>
+                    </div>
+                    <p>Сделать доставку максимально быстрой. Мы должны 
+                        просто заставить рестораны делать приготовление и 
+                        доставку быстрее не в ущерб качеству.</p>
+                </div>
+
+                <div class="point">
+                    <div class="point_bg">
+                        <img src="./img/for_restaurants/point2.png" alt="">
+                        <span>2</span>
+                    </div>
+                    <p>Сделать заказ еды простым и понятным – в 
+                        два клика: первый клик – выбрать и добавить в пакет; 
+                        второй – нажать на кнопку ЗАКАЗАТЬ.</p>
+                </div>
+
+                <div class="point">
+                    <div class="point_bg">
+                        <img src="./img/for_restaurants/point1.png" alt="">
+                        <span>3</span>
+                    </div>
+                    <p>Предоставить возможность заказывать вкусную 
+                        еду во всех городах вне зависимости от 
+                        численности населения.</p>
+                </div>
+
+    
+            </div>
+        </section>
+
+        <section class="section s-diagram">
+                <div class="container">
+    
+                    <div class="title">
+                        <h1>ХОЧУ-ПОЕСТЬ.РФ - ЭТО ТОЧНО ВЫГОДНО! МЫ УЗНАВАЛИ :)</h1>
+                        <p>По данным сайта beboss 67% клиентов общепита ранее не заказывали доставку еды, 
+                            11% заказывают в любимых ресторанах, 22% заказывают только через сайты-агрегаторы. 
+                            Поколение от 23 до 35 заказывают еду через агрегаторы в разы чаще - 35%.</p>
+                    </div>
+
+                    <div class="diagrams">
+                        <div class="diagram_box">
+                            <p>Старые клиенты - это стабильность, 
+                                но с точки зрения теории бизнеса, стабильность - 
+                                это показатель деградации.</p>
+                                <img src="./img/for_restaurants/diagram1.svg" alt="">
+                        </div>
+
+                        <div class="diagram_box">
+                            <p>Наша задача привести Вам тех клиентов, которые заказывают 
+                                на сервисах - это от 22 до 32% ЦА. На их привлечение Вы явно 
+                                потратите больше. Новые клиенты - это рост. Вы же хотите расти?</p>
+                                <img src="./img/for_restaurants/diagram2.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="extra_info">
+                        <div class="info_box">
+                            <img src="./img/for_restaurants/info1.png" alt="">
+
+                            <div class="reference">
+                                <a href="#">Узнать больше подробностей</a>
+                            </div>
+
+                        </div>
+                        <div class="info_box">
+                            <img src="./img/for_restaurants/info2.png" alt="">
+                            <div class="reference">
+                                <a href="#">Получать больше заказов</a>
+                            </div>
+                        </div>
+                        <div class="info_box">
+                            <img src="./img/for_restaurants/info3.png" alt="">
+                            <div class="reference">
+                                <a href="#">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+    
+        
+                </div>
+            </section>
+
+            <section class="section s-smi">
+                    <div class="container">
+        
+                        <h1>СМИ О ХОЧУ-ПОЕСТЬ</h1>
+    
+
+    
+                        <div class="smi_about">
+                            <img src="./img/for_restaurants/smi1.png" alt="">
+                            <img src="./img/for_restaurants/smi2.png" alt="">
+                            <img src="./img/for_restaurants/smi3.png" alt="">
+                            <img src="./img/for_restaurants/smi4.png" alt="">
+                            <img src="./img/for_restaurants/smi5.png" alt="">
+                        </div>
+        
+                        <h1>ПОЛЕЗНЫЕ МАТЕРИАЛЫ</h1>
+
+                        <div class="references">
+
+                            <div class="reference_box">
+                                <img src="./img/for_restaurants/Arrow.svg" alt="">
+                                <a href="#">Зачем нужен таргетолог в ресторане?</a>
+                            </div>
+
+                            <div class="reference_box">
+                                <img src="./img/for_restaurants/Arrow.svg" alt="">
+                                <a href="#">Как бороться с сезонностью в ресторанном бизнесе?</a>
+                            </div>
+
+                            <div class="reference_box">
+                                <img src="./img/for_restaurants/Arrow.svg" alt="">
+                                <a href="#">Развитие ресторана по франшизе</a>
+                            </div>
+
+                            <div class="reference_box">
+                                <img src="./img/for_restaurants/Arrow.svg" alt="">
+                                <a href="#">Секреты скрытого маркетинга</a>
+                            </div>
+
+                            <div class="reference_box">
+                                <img src="./img/for_restaurants/Arrow.svg" alt="">
+                                <a href="#">Почему ресторанам выгодно сотрудничество с агрегаторами доставки еды?</a>
+                            </div>
+
+                        </div>
+            
+                    </div>
+            </section>
+
+    </main>
+
+    <!--------Footer---------->
+
+    <footer class="footer" id="footer">
+        <img src="img/restrunt_card/footer/footer_big_phone.svg" alt="big_phone" class="footer_big_phone">
+        <div class="footer_content">
+            <div class="container">
+                
+
+                <div class="first_row">
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">О проекте</a> </li>
+                            <li> <a href="@">Для ресторанов и служб доставки</a> </li>
+                            <li> <a href="@">Пользовательское соглашение</a> </li>
+                            <li> <a href="@">Бонусная программа</a> </li>
+                            <li> <a href="@">Контакты</a> </li>
+                            <li> <a href="@">Блог</a> </li>
+                            <li class="footer_gift" ><a href="@">Подарки</a> </li>
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">Доставка пиццы</a> </li>
+                            <li> <a href="@">Доставка суши</a> </li>
+                            <li> <a href="@">Доставка закусок</a> </li>
+                            <li> <a href="@">Здоровое питание</a> </li>
+                            <li> <a href="@">Доставка бургеров</a> </li>
+                            <li> <a href="@">Доставка десертов</a> </li>
+                            <li> <a href="@">Доставка раков</a> </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        
+                        <ul>
+                            <li> <a href="#">Бизнес-ланчи</a> </li>
+                            <li> <a href="#">Доставка пирогов</a> </li>
+                            <li> <a href="#">Доставка шашлыков</a> </li>
+                            <li> <a href="#">Доставка салатов</a> </li>
+                            <li> <a href="#">Доставка тортов</a> </li>
+                            <li> <a href="#">Доставка кофе</a> </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="second_row">
+                    <h2>Мы везде</h2>
+                    <div class="footer_icons">
+                        <a href="#"><img src="img/restrunt_card/footer/vk.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/facebook.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/ok.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/insta.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/youtoobe.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/twitter.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/telega.svg" alt="vk_icon"></a>     
+                    </div>
+                    <p>Acheive right now</p>
+                </div>
+                <div class="third_row">
+                    <div class="column">
+                        <div class="open_map_wrapp">
+                            <a href="#" class="open_map">Открой</a>
+                        </div>
+                        <img src="img/global/wte_footer.svg" alt="" class="footer_logo">
+                        <p>В своем городе</p>
+                    </div>
+                    <div class="column">
+                        <p>Заказывайте еще быстрее<br>
+                            через мобильное приложение
+                        </p>
+                        <div class="google_apple">
+                            <a href="#"><img src="img/restrunt_card/footer/google_play.svg" alt="google_play"></a>
+                            <a href="#"><img src="img/restrunt_card/footer/app_store.svg" alt="app_store"></a>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+        <div class="footer_bottom_line">
+            <div class="container">
+                <div class="copyright">
+                    <img src="img/restrunt_card/footer/copy_right.svg" alt="">
+                    <p>"Хочу поесть" Все права защищены</p>
+                </div>
+                <div class="flags">
+                    <a href="#"><img src="img/restrunt_card/footer/ukr.svg" alt="ukraine"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/belarus.svg" alt="belarus"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/kaz.svg" alt="kz"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/euro.svg" alt=""></a>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+   
+
+
+    
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>

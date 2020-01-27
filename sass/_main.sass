@@ -1,0 +1,455 @@
+@import 'global_settings'
+
+.main
+    overflow: unset
+    background: $main_bg
+    .main_top_line
+        padding-bottom: 10px
+        height: 120px
+        width: auto
+        background-image: url(../img/restrunt_card/main/main_green_line.png)
+        transform: translateY(-10px)
+        background-repeat: no-repeat
+        background-size: cover
+        align-items: center
+        justify-content: flex-start
+        
+        .container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            height: 100%
+            & .top_line_column
+                width: 100%
+                display: flex
+                justify-content: space-between
+                flex-direction: row
+                align-items: center
+
+            
+            
+            .m_tl_text
+                width: 30%
+                color: white
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                &:nth-child(3)
+                    margin: 0 20px
+                
+                h1 
+                    font-size: 20px
+                    font-weight: bold
+                    line-height: 27px
+                    max-width: 300px
+                    &:last-child
+                        max-width: 365px
+                p 
+                    font-size: 10px
+                    font-weight: normal
+                    a 
+                        color: white
+                        transition: 1.4s
+                        text-decoration: none
+                        border-bottom: 1px solid white
+                        transition: 0.2s
+                        font-size: 10px
+                        font-weight: normal
+                        &:hover
+                            border-bottom: 1px solid transparent
+                        
+                            
+            .m_tl_icons
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 70px
+                padding-right: 10px
+                width: 20%
+                border-right: 1px solid rgba(#FFFFFF, 0.3)
+                a
+                    .icon   
+                        height: 42px
+                        width: 42px
+                        background: white
+                        border-radius: 50%
+                        margin: 0 4px
+                        background-repeat: no-repeat
+                        background-position: center
+                    .icon1
+                        background-image: url(../img/restrunt_card/main/operator_1.svg)
+                    .icon2
+                        background-image: url(../img/restrunt_card/main/operator_2.svg)
+                    .icon3
+                        background-image: url(../img/restrunt_card/main/operator_3.svg)
+                    .icon4
+                        background-image: url(../img/restrunt_card/main/operator_4.svg)
+            // .m_tl_btn   
+            //     width: 170px
+            //     height: 44px
+            //     background: none
+            //     border: none
+            //     outline: none
+            //     background: $green
+            //     border-radius: 30px
+            //     color: white
+            //     text-transform: uppercase
+
+/*--------------------Main-page---------------------*/
+
+.main_top_line
+    & .mobile_column
+        display: flex
+    & .address_form
+        display: flex
+        align-items: center
+        width: 70%
+        
+        & input 
+            width: 370px
+            height: 27px
+            border: none
+            background: transparent
+            border-bottom: 1px solid rgba(#ffffff, .3)
+        & input::placeholder
+            color: #ffffff
+            font-size: 16px
+            opacity: .3
+        & input:focus
+            opacity: 1
+            color: #ffffff
+            outline: none
+        & .m_tl_icons
+            &.main_page
+                width: 33%
+                border-right: none
+                & .map
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    background: #F17E00
+                    border-radius: 50%
+                    margin-left: 30px
+                    padding: 7px 10px
+                & .micro
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    background: #F17E00
+                    border-radius: 50%
+                    padding: 7px 12px
+                    margin-left: 10px
+                    margin-right: 120px
+                & .search
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    display: none
+                    background: #50CE1B
+                    border: none
+                    border-radius: 50%
+                    padding: 10px 11px
+                    margin-left: 10px
+                    margin-right: 120px
+        & .green_btn
+            &.main_btn
+                width: 41%
+                margin-top: 10px
+                width: 200px
+
+
+.food_cards
+    margin: 60px 0 0 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .card_inner
+        margin-bottom: 35px
+        background-color: #ffffff
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+        border-radius: 8px
+        width: 23%
+        position: relative
+        transition: all .3s linear
+        text-align: center
+        color: rgba(0, 0, 0, 0.4)
+        &:last-child
+            margin-left: 2.5%
+            margin-right: auto
+        & img
+            position: relative
+            top: -13%
+            width: 100%
+            height: auto
+            display: block
+        &:hover
+            background-color: #F17E00
+            cursor: pointer
+            color: #ffffff
+            transform: scale(1.03)
+        & p 
+            font-family: "Open Sans"
+            font-weight: 700
+            position: relative
+            top: -13%
+
+.section
+    &.s-advantages
+        height: 100%
+        min-height: 840px
+        width: 100%
+        background-image: url(../img/main_page/section_bg.png)
+        background-repeat: no-repeat
+        background-size: 40% 100%
+        & .advantages
+            width: 100%
+            height: 100%
+            min-height: 830px
+            display: flex
+            justify-content: baseline
+            align-items: center
+            & .delicious_food
+                width: 37%
+                display: flex
+                flex-direction: column
+                & .adv_row
+                    color: #50CE1B
+                    display: flex
+                    justify-content: space-between
+                    & .hungry
+                        & h1
+                            text-transform: uppercase
+                            font-size: 32px
+                            font-weight: 800
+                    & .fork
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: space-evenly
+                        transform: translate(-54%, -23%)
+                        & p
+                            margin-top: 10px
+                            width: 107%
+                            text-align: right
+                            font-weight: 700
+                            transform: rotate(270deg)
+                & .food_order
+                    & h4
+                        width: 65%
+                        color: #F17E00
+                        margin-bottom: 10px
+                    & p
+
+                        width: 85%
+                        font-size: 12px
+                        color: #ffffff
+            & .another_advantages
+                width: 67%
+                display: flex
+                flex-direction: column
+                & .advantage_explanation
+                    & p
+                        margin-bottom: 35px
+                        font-size: 12px
+                    & .advantage_title
+                        display: flex
+                        align-items: center
+                        & span
+                            vertical-align: sub
+                            display: inline-block
+                            max-width: 165px
+                            text-transform: uppercase
+                            font-size: 16px
+                            font-weight: 700
+                            color: #50CE1B
+                        & img
+                            margin-right: 25px
+                            margin-bottom: 15px
+                & .advantage_explanation
+                    &:last-child
+                        & p
+                            margin-bottom: 0
+.main_top_line
+    &.main_pg
+        transform: translateY(22px)
+
+    //--------contacts-page----------//
+.main
+    & .section
+        &.s-contacts
+            & .container
+                & .contact_cards
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    margin: 60px 0 80px 0
+                    & .card_inner
+                        width: 31%
+                        text-align: center
+                        &:last-child
+                            margin-left: 3%
+                            margin-right: auto
+                        & img
+                            width: 55%
+                            height: auto
+                            margin: 20px 0
+                            transition: all .3s linear
+                            &:hover
+                                transform: scale(1.03)
+                        & h2
+                            font-size: 14px
+                            color: $orange
+                            margin-bottom: 5px
+                        & a
+                            font-size: 14px
+                            color: $green
+                            text-decoration: underline
+                            margin-bottom: 5px
+                            &:hover
+                                text-decoration: none
+                        & p
+                            text-align: left
+                            margin-top: 5px
+                            font-size: 12px
+                            margin-bottom: 5px
+
+
+    //--------gift-page----------//
+
+.main
+    & .section
+        &.s-gifts
+            & .container
+                display: flex
+                justify-content: space-between
+                & .gift_box
+                    width: 80%
+                    & h1
+                        font-size: 16px
+                        color: $orange
+                    & .gift_cards
+                        display: flex
+                        justify-content: space-between
+                        flex-wrap: wrap
+                        & .gift_inner
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            background-color: #ffffff
+                            width: 31%
+                            text-align: center
+                            margin-bottom: 30px
+                            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            border-radius: 4px
+                            & .gift_title
+                                position: relative
+                                width: 100%
+                                padding: 15px 15px 45px 15px
+                                & h2
+                                    position: absolute
+                                    padding: 0 10px
+                                    width: 100%
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%,-50%)
+                                    color: $orange
+                            & img
+                                width: 100%
+                                height: auto
+                            & p
+                                font-size: 12px
+                                padding: 15px
+                            & h3
+                                margin-top: 5px
+                                font-weight: 700
+                            & button
+                                &.menu_item_btn
+                                    font-size: 12px
+                                    height: 24px
+                                    margin: 20px auto
+                    & button
+                        &.menu_item_btn
+                            &.add
+                                margin-top: 0
+                                margin-bottom: 0
+                                width: 180px
+                                height: 44px
+                & .gift_choice
+                    width: 20%
+                    margin-right: 30px
+                    & .choice_toggle
+                        display: none
+                        position: absolute
+                        cursor: pointer
+                        content: ''
+                        width: 32px
+                        height: 20px
+                        right: 1%
+                        top: 35%
+                        border: 0
+                        background: $orange
+                        border-radius: 10px
+                        padding: 0
+                        background-image: url(../img/global/arrow_unactive.svg)
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: auto
+                        &:focus
+                            outline: none
+                        &.active
+                            top: 7%
+                            background-image: url(../img/global/arrow_active.png)
+                    & .choice_box
+                        padding: 15px
+                        background-color: #ffffff
+                        border-radius: 3px
+                        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                        transition: opacity 1s linear
+                        & span
+                            &.all
+                                color: $orange
+                        &.active
+                            display: flex
+                            animation: in 500ms ease
+                            opacity: 1
+                        & .checkbox_list_inner
+                            margin-top: 10px
+                            & #one_choice
+                                position: relative
+                                top: 2px
+                                height: 14px
+                                width: 14px
+                                background-color: #ffffff
+                                border: 1px solid rgba(0, 0, 0, 0.12)
+                                display: inline-block
+                                border-radius: 3px
+                            & input[type="checkbox"]
+                                display: none
+                                &:checked + label
+                                    background-image: url(../img/global/chacked.png)
+                                    background-repeat: no-repeat
+                                    background-position: center
+                            & span
+                                display: inline-block
+                                margin-left: 5px
+                        & .checkbox_wrapper
+                            & input[type="checkbox"]
+                                &.selectall
+                                    display: none
+                            & #all_choice
+                                position: relative
+                                top: 2px
+                                height: 14px
+                                width: 14px
+                                background-color: #ffffff
+                                border: 1px solid rgba(0, 0, 0, 0.12)
+                                display: inline-block
+                                border-radius: 3px
+                            & input[type="checkbox"]
+                                &:checked + label
+                                    background-image: url(../img/global/chacked.png)
+                                    background-repeat: no-repeat
+                                    background-position: center
+                            & span
+                                display: inline-block
+                                margin-left: 5px
+                        
+
+                    & h1
+                        font-size: 16px
+                        color: $orange

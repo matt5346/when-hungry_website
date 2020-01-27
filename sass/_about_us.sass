@@ -1,0 +1,159 @@
+@import 'global_settings'
+.header
+    & .header_img
+        &.extra
+            height: 660px
+            background-image: url(../img/about_us/header_bg.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            & .container
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+                & .header_inner
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    color: #ffffff
+                    & h1
+                        text-transform: uppercase
+                        font-size: 30px
+                        margin-right: 35px
+                        width: 40%
+                        text-align: center
+                    & .header_text
+                        width: 60%
+                        border-left: 1px solid #ffffff
+                        padding-left: 35px
+                        opacity: .7
+                        & p
+                            margin-bottom: 15px
+                            font-size: 14px
+.main
+    background: $main_bg
+    .top_line
+        height: 120px
+        width: 100%
+        background-image: url(../img/restrunt_card/main/main_green_line.png)
+        transform: translateY(-10px)
+        background-repeat: no-repeat
+        background-size: cover
+        align-items: center
+        justify-content: flex-start
+        .container
+            height: 100%
+            display: flex
+            align-items: center
+        h1 
+            color: white
+            font-size: 20px
+    & .section
+        &.s-about_us
+            margin: 15px 0
+            margin-top: 50px
+            & .container
+                & .about_cards
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    & .card_inner
+                        width: 23%
+                        background-color: $orange
+                        margin-bottom: 40px
+                        border-radius: 4px
+                        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24)
+                        transition: all .3s linear
+                        &:hover
+                            transform: scale(1.03)
+                        & p
+                            text-align: center
+                            color: #ffffff
+                            margin-bottom: 15px
+                        & .card_images
+                            position: relative
+                            & img
+                                position: relative
+                                top: -18px
+                                display: block
+                                margin: 0 auto
+                                width: 88%
+                                height: auto
+                                &:last-child
+                                    position: absolute
+                                    width: 50%
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%, -65%)
+    & .section
+        &.s-startup
+            background-color: rgba(0, 0, 0, 0.04)
+            & .container
+                & .startup
+                    & h1
+                        text-align: center
+                        font-size: 20px
+                        padding: 45px 0
+                        width: 52%
+                        margin: 0 auto
+                    & .startup_description
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        & img
+                            margin-right: 15px
+                            width: 15%
+                            height: auto
+                        & .startup_text
+                            width: 85%
+                            & p
+                                margin-bottom: 15px
+                                font-size: 12px
+                    & .startup_images_row
+                        margin-top: 35px
+                        margin-bottom: 60px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        flex-wrap: wrap
+                        & img
+                            width: 11%
+                            height: auto
+    & .section
+        &.s-about_more
+            background-image: url(../img/about_us/about_bg.png)
+            background-repeat: no-repeat
+            background-position: -20% 100%
+            background-size: auto
+            & .container
+                & .about_review
+                    & .about_us_box
+                        margin-bottom: 55px
+                        & .box_title
+                            position: relative
+                            margin: 50px 0 30px 15px
+                            & p
+                                font-size: 16px
+                                font-weight: 700
+                                position: absolute
+                                text-align: center
+                                width: 21%
+                                top: 50%
+                                left: 50%
+                                transform: translate(-225%, -50%)
+                            & img
+                                width: 26%
+                                height: auto
+                        & .box_bottom
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            & .bottom_text
+                                width: 99%
+                                & p
+                                    font-size: 12px
+                                    margin-bottom: 10px
+                            & img
+                                margin-left: 30px
+                                width: 15%
+                                height: 100%

@@ -1,0 +1,378 @@
+@import 'global_settings'
+.main
+    & .section
+        &.s-blog
+            & .container
+                & .blog
+                    & .blog_header
+                        margin-top: 50px
+                        margin-bottom: 30px
+                        width: 100%
+                        background-color: #ffffff
+                        border-right: 4px
+                        & .blog_nav
+                            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            padding: 0 35px
+                            border-radius: 4px
+                            & .nav_link
+                                min-width: 100px
+                                max-width: 160px
+                                width: 100%
+                                padding: 10px 0
+                                text-align: center
+                                text-transform: uppercase
+                                font-size: 14px
+                                font-weight: 700
+                                width: 200px
+                                cursor: pointer
+                                &.active
+                                    background-color: $orange
+                                    color: #ffffff
+                                &:hover
+                                    background-color: $green
+                                    &.active
+                                        background-color: $orange
+                                &.slick-slide
+                                    &.slick-active
+                                        width: 150px
+                            & button
+                                cursor: pointer
+                                &.slick-prev
+                                    background-image: url(../img/blog/arrow-p.svg)
+                                    background-size: auto
+                                    background-position: center
+                                    background-repeat: no-repeat
+                                    background-color: #ffffff
+                                    left: 0
+                                    &::before
+                                        content: ''
+                                &.slick-next
+                                    background-image: url(../img/blog/arrow-n.svg)
+                                    background-size: auto
+                                    background-position: center
+                                    background-repeat: no-repeat
+                                    background-color: #ffffff
+                                    right: 0
+                                    &::before
+                                        content: ''
+                            & .slick-dots
+                                left: 0
+                                & li
+                                    & button
+                                        &::before
+                                            font-size: 18px
+                                            visibility: hidden
+                                        &::after
+                                            content: ''
+                                            display: block
+                                            width: 27px
+                                            height: 5px
+                                            background: rgba(#000000, .3)
+                                & .slick-active
+                                    & button
+                                        &::before
+                                            font-size: 18px
+                                            visibility: hidden
+                                        &::after
+                                            content: ''
+                                            display: block
+                                            width: 27px
+                                            height: 5px
+                                            background: $orange
+
+                    & .blog_body
+                        display: flex
+                        justify-content: space-between
+                        & .blog_page
+                            width: 72%
+                            display: flex
+                            flex-direction: column
+                            & .post
+                                background-color: rgba(0, 0, 0, 0.04)
+                                display: flex
+                                justify-content: space-between
+                                flex-direction: column
+                                margin-bottom: 10px
+                                padding: 15px
+                                border-radius: 4px
+                                &.bg_color
+                                    background-color: $main_bg
+                                & .post_description
+                                    display: flex
+                                    justify-content: space-between
+                                    align-items: center
+                                    & .post_title
+                                        width: 47%
+                                        margin: 0 auto auto 10px
+                                        & h3
+                                            font-size: 16px
+                                            color: $orange
+                                        & span
+                                            color: rgba(0, 0, 0, 0.4)
+                                            font-size: 12px
+                                    & img
+                                        width: 25%
+                                        height: auto
+                                & .post_text
+                                    margin-top: 15px
+                                    & h3
+                                        display: none
+                                        font-size: 16px
+                                        color: $orange
+                                        margin: 10px 0
+                                & .post_sm
+                                    & .post_time_sm
+                                        display: none
+                                        color: rgba(0, 0, 0, 0.4)
+                                        font-size: 12px
+                                    & button
+                                        &.menu_item_btn
+                                            margin-bottom: 15%
+                                            width: 100px
+                                            height: 24px
+                                            font-size: 12px
+                            & button
+                                &.menu_item_btn
+                                    &.add
+                                        width: 180px
+                                        margin-top: 30px
+                                        margin-bottom: 60px
+                        & .blog_right
+                            width: 25%
+                            & .blog_extra_info
+                                width: 100%
+                                & img
+                                    width: 100%
+                                    height: auto
+                                    margin-bottom: 30px
+                                & .links
+                                    display: block
+                                    margin-left: 20px
+                                    ul
+                                        list-style: none
+                                        & li
+                                            margin: 8px 0
+                                            &::before
+                                                content: '\2022'
+                                                color: $green
+                                                font-weight: 700
+                                                display: inline-block
+                                                width: 1em
+                                                margin-left: -1em
+                                            & a
+                                                color: #000000
+                                                display: inline-block
+                                                opacity: 0.5
+                                                text-decoration: underline
+                
+//--------blog-card-----------//
+
+.main
+    & .section
+        &.s-blog
+            & .container
+                & .blog
+                    & .blog_card_links
+                        color: $orange
+                        display: flex
+                        justify-content: space-between
+                        margin-top: 45px
+                        margin-bottom: 35px
+                        & .prev_article
+                            & button
+                                text-decoration: none
+                                border: none
+                                background-color: $main_bg
+                                &:focus
+                                    outline: none
+                            & img
+                                margin-right: 15px
+                        & .next_article
+                            & button
+                                text-decoration: none
+                                border: none
+                                background-color: $main_bg
+                                &:focus
+                                    outline: none
+                            & img
+                                margin-left: 15px
+                        & .back_world_food
+                            text-align: center
+                            & a
+                                color: $orange
+                                text-decoration: none
+                                &:hover
+                                    text-decoration: none
+                                    underline: none
+                    & .blog_body
+                        & .links
+                            display: none
+                            & ul
+                                list-style: none
+                                & li
+                                    margin: 8px 0
+                                    &::before
+                                        content: '\2022'
+                                        color: $green
+                                        font-weight: 700
+                                        display: inline-block
+                                        width: 1em
+                                        margin-left: -1em
+                                    & a
+                                        color: #000000
+                                        display: inline-block
+                                        opacity: 0.5
+                                        text-decoration: underline
+                        & .blog_card
+                            width: 72%
+                            display: flex
+                            justify-content: space-between
+                            & .card_side
+                                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                                border-radius: 4px
+                                background-color: #ffffff
+                                margin-bottom: 75px
+                                & .card_title
+                                    margin-bottom: 15px
+                                    padding: 0 15px
+                                    & h1
+                                        margin: 10px 0 5px 0
+                                        font-size: 16px
+                                        color: $orange
+                                    & span
+                                        font-size: 12px
+                                        color: rgba(0, 0, 0, 0.4)
+                                & .card_middle
+                                    padding: 0 15px
+                                    display: flex
+                                    justify-content: space-between
+                                    align-items: center
+                                    & img
+                                        width: 50%
+                                        height: auto
+                                        margin-bottom: 10px
+                                    & .middle_inner
+                                        margin-right: auto
+                                        margin-left: 30px
+                                        & h3
+                                            font-size: 12px
+                                            font-weight: 700
+                                            margin-bottom: 10px
+                                        & p
+                                            font-size: 12px
+                                            margin-bottom: 10px
+                                & .card_bottom
+                                    padding: 10px 15px
+                                    & h3
+                                        font-weight: 700
+                                        font-size: 12px
+                                        margin-bottom: 10px
+                                    & p
+                                        font-size: 12px
+                                        margin-bottom: 10px
+                                & .comments_part
+                                    background-color: $main_bg
+                                    & .comment
+                                        padding: 15px
+                                        span
+                                            &.name
+                                                display: inline-block
+                                                font-weight: 700
+                                                margin-right: 15px
+                                                font-size: 14px
+                                                color: $orange
+                                            &.time
+                                                font-size: 12px
+                                                color: rgba(0, 0, 0, 0.4)
+                                        p
+                                            font-size: 12px
+                                            margin-top: 10px
+                                & .comment_application
+                                    max-width: 1140px
+                                    background-color: #ffffff
+                                    display: flex
+                                    flex-direction: column
+                                    padding: 0 10px
+                                    margin: 15px auto
+                                    position: relative
+                                    & input
+                                        border-radius: 4px 4px 0 0
+                                        max-width: 1140px
+                                        width: 100%
+                                        margin: 0 auto
+                                        padding: 5px 15px
+                                        background-color: #ffffff
+                                        border: 1px solid rgba(0, 0, 0, 0.12)
+                                        font-size: 12px
+                                        color: 1px solid rgba(0, 0, 0, 0.12)
+                                        border-bottom: none
+                                        &:focus
+                                            outline: none
+                                    & textarea
+                                        border-radius: 0 0 4px 4px
+                                        padding-left: 15px
+                                        padding-top: 10px
+                                        background-color: #ffffff
+                                        border: 1px solid rgba(0, 0, 0, 0.12)
+                                        font-size: 12px
+                                        color: 1px solid rgba(0, 0, 0, 0.12)
+                                        max-height: 54px
+                                        max-width: 1140px
+                                        width: 100%
+                                        margin: 0 auto
+                                        resize: none
+                                    & .comment_btn
+                                        text-decoration: none
+                                        border: none
+                                        background-color: #ffffff
+                                        position: absolute
+                                        cursor: pointer
+                                        right: 3%
+                                        top: 52%
+                                        &:focus
+                                            outline: none
+                                & .share_socials
+                                    padding: 0 15px 15px 15px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    width: 40%
+                                    margin: 0 auto
+                                    text-align: center
+                                    & a
+                                        margin-right: 3%
+                                        font-size: 12px
+                                        color: rgba(0, 0, 0, 0.6)
+                                        border: none
+                                        text-decoration: underline
+                                    & img
+                                        cursor: pointer
+                                        margin-right: 2%
+                                        width: 8%
+                                        height: auto
+                        & .blog_right
+                            width: 25%
+                            & .blog_extra_info
+                                width: 100%
+                                & img
+                                    width: 100%
+                                    height: auto
+                                    margin-bottom: 30px
+                                & .links
+                                    margin-left: 20px
+                                    ul
+                                        list-style: none
+                                        & li
+                                            margin: 8px 0
+                                            &::before
+                                                content: '\2022'
+                                                color: $green
+                                                font-weight: 700
+                                                display: inline-block
+                                                width: 1em
+                                                margin-left: -1em
+                                            & a
+                                                color: #000000
+                                                display: inline-block
+                                                opacity: 0.5
+                                                text-decoration: underline

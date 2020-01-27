@@ -1,0 +1,832 @@
+@import 'global_settings'
+@media screen and(max-width: 1500px)
+    .footer
+        .footer_big_phone
+            position: absolute
+            bottom: 0
+            right: 9%
+    
+@media screen and(max-width: 1400px)
+    .footer
+        .footer_big_phone
+            position: absolute
+            bottom: 0
+            right: 5%
+    
+@media screen and(max-width: 1235px)
+    .footer
+        display: flex
+        flex-direction: column
+        align-items: center
+        .container
+            .first_row
+                justify-content: space-around
+                .first_row_item
+                    margin-right: 0
+
+        .footer_big_phone
+            display: none
+        .footer_bottom_line
+            display: flex
+            justify-content: center
+
+@media screen and(max-width: 1170px)
+    .header
+        .top_line
+            padding: 0 30px
+        .header_img
+            height: 420px
+            img 
+                display: none
+
+
+           
+@media screen and(max-width: 986px)
+
+    .restrunt_list_main
+        .section_a
+            .container
+                max-width: 100%
+                .rest_items
+                    margin: 20px auto
+                    width: 100%
+                    .item_rest_adv
+                        width: 100%
+                        padding: 0 20px
+                    .rest_item
+                        & .rest_items
+                            margin-bottom: 0
+                            padding-right: 0
+                        .right
+                            & .first_line
+                                & .icons
+                                    & .icon_descr
+                                        text-align: right
+                            .second_line
+                                .min_price
+                                    width: 66%
+                                    .column
+                                        margin-right: 0
+                                        & strong
+                                            font-size: 18px
+                                        &:nth-child(2)
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    margin: 0 auto
+                                                &:nth-child(2)
+                                                    text-align: center
+                                        &:nth-child(3)
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    text-align: center
+                                & .work_time
+                                    & p
+                                        & strong
+                                            font-size: 18px
+
+    .restrunt_list_main
+        .restrunt_list_main_top_line
+            & h1
+                margin-right: auto
+            .container
+                justify-content: space-between
+                padding: 0 20px
+                .m_tl_text
+                    &:nth-child(3)
+                        display: none
+                .m_tl_icons
+                    border: none
+                    
+                .m_tl_btn 
+                    display: none
+    .search
+        justify-self: flex-end
+        width: 44px
+        input 
+            position: absolute
+            bottom: -54px
+            left: -46px
+            width: 204px
+            
+            display: none
+
+        .search_logo
+            margin: 0
+    .enter_sign_up
+        float: right
+        margin: 0
+        p 
+            display: none
+    .basket
+        margin-left: 10px
+
+
+    .restrunt_list_main
+        .sidebar_adv
+            display: none   
+        .section_a
+            margin-bottom: 0px
+            & button
+                &.menu_item_btn
+                    margin: 20px auto 0 auto
+            .container
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 0 15px
+                .order_crytery
+                    position: static
+                    order: 1
+                    width: 100%
+                    margin-left: 0
+                    .order_crytery_title
+                        position: relative
+                        & button
+                            right: 0
+                            display: block
+                    .order_crytery_inner
+                        display: none
+                        justify-content: space-between
+                        width: 100%
+                        height: auto
+                        margin: 0 auto
+                        flex-direction: column
+                        &.active
+                            animation: in .4s linear
+                            display: flex
+                        .meals
+                            .chack_group
+                                flex-direction: row
+                                flex-wrap: wrap
+                                .check_label
+                                    margin-top: 15px
+                                    margin-right: 10px
+                        .min_amount
+                            .range_value
+                                max-width: 216px
+
+                        .ordering_criteria
+                            .chack_group
+                                flex-direction: row
+                                flex-wrap: wrap
+                                .check_label
+                                    margin-top: 15px
+                                    margin-right: 10px
+                .rest_items
+                    margin-top: 10px
+                    margin-bottom: 0
+                    order: 1
+                    padding-right: 0
+                    .left
+                        .susi_logo
+                            margin: 0 30px
+                            img 
+                                height: auto
+                                width: 100%
+                        .stars
+                            margin: 20px 30px 0 30px
+                    .right    
+                        .second_line
+                            .min_price
+                                .column
+                                    &:nth-child(2)
+                                        & p
+                                            &:nth-child(1)
+                                                display: block
+                                                margin: 0 auto
+                                    &:nth-child(3)
+                                        & p
+                                            &:nth-child(1)
+                                                display: block
+                                                margin: 0 auto
+        .section_b
+            margin-top: 25px
+            .container
+                padding: 0 15px
+                & .title
+                    margin-top: 30px
+                    margin-bottom: 15px
+    /*---------------- restaurant card------------------- */
+    .main   
+        .section_a
+             .container
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 0 20px
+                margin: 0 auto
+                max-width: 100%
+                .order_crytery
+                    position: static
+                    order: 1
+                    width: 100%
+                    margin-left: 0
+                    .order_crytery_title
+                        margin-left: 0
+                        position: relative
+                        & button
+                            right: 0
+                            display: block
+                    .order_crytery_inner
+                        display: none
+                        justify-content: space-between
+                        width: 100%
+                        height: auto
+                        margin: 0 auto
+                        flex-direction: column
+                        opacity: 0
+                        &.active
+                            display: flex
+                            opacity: 1
+                            animation: in .5s linear
+                        .meals
+                            .chack_group
+                                flex-direction: row
+                                flex-wrap: wrap
+                                .check_label
+                                    margin-top: 15px
+                                    margin-right: 10px
+                        .min_amount
+                            .range_value
+                                max-width: 216px
+                        .ordering_criteria
+                            .chack_group
+                                flex-direction: row
+                                flex-wrap: wrap
+                                .check_label
+                                    margin-top: 15px
+                                    margin-right: 10px
+                .rest_item_wrapper
+                    margin-top: 30px
+                    order: 0
+                    width: 100%
+                    .rest_item
+                        padding-right: 20px
+                        .left
+                            .susi_logo
+                                margin: 0 30px
+                                img 
+                                    height: auto
+                                    width: 100%
+                            .stars
+                                margin: 20px 30px 0 30px
+                & .menu_container
+                    width: 100%
+                    max-width: 100%
+                    order: 3
+                    & .dishes_values
+                        margin-right: 23%
+                    & button
+                        &.menu_item_btn
+                            &.add
+                                margin: 30px auto 10px auto
+                .restrunt_menu_wrapper
+                    width: 100%
+                    order: 2 
+                    & .restrunt_menu
+                        width: 100%
+                        & .menu_header
+                            width: 100%
+                            & .menu_link
+                                width: 100%
+    
+    .section_a
+        & .container
+            & .restrunt_menu_wrapper
+                & .restrunt_menu_basket
+                    display: none
+            & .menu_container
+                margin: 0 auto
+                & .sorting_block
+                    margin-top: 30px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    & .amount_of_dish
+                        display: flex
+                        align-items: center
+                        & span
+                            & strong
+                                color: rgba(0, 0, 0, 0.6)
+                    & .buttons_wrapper
+                        & .menu_item_btn
+                            width: 140px
+                            height: 40px
+                            background-color: #ffffff
+                            color: $orange
+                            &.active
+                                margin-right: 10px
+                                color: #ffffff
+                                background-color: $orange
+                        & img
+                            margin-right: 10px
+                            margin-bottom: 3px
+                & .dishes_values
+                    margin-top: 20px
+                    margin-bottom: 10px
+                    padding-left: 15px
+                    color: $orange
+                    font-weight: 700
+                    display: flex
+                    justify-content: space-between
+                    margin-right: 24%
+                & .dishes_list
+                    & .dish
+                        background-color: rgba(0, 0, 0, 0.04)
+                        padding: 5px 15px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        & .dish_name
+                            width: 33%
+                            & h3
+                                color: $green
+                                font-weight: 700
+                            & span
+                                font-size: 12px
+                                color: rgba(0, 0, 0, 0.4)
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+                        & .dish_middle
+                            display: flex
+                            justify-content: space-between
+                            width: 42%
+                            & span
+                                &.sale
+                                    color: $green
+                                    border-bottom: 1px solid $green
+                                    height: 19px
+                                &.price
+                                    font-weight: 700
+                        &.bg_color
+                            background-color: $main_bg
+
+@media screen and(max-width: 768px)
+
+    .select_city_wrap
+        display: none
+    .search
+        display: none
+    .enter_sign_up
+        display: none
+    .basket
+        width: 44px
+        height: 44px
+        &:after
+            width: 36px
+            height: 36px
+            background: none
+            background-image: url(../img/restrunt_card/header/cart_icon_reverse.svg)
+            background-repeat: no-repeat
+            background-position: center
+            right: 8%
+        span 
+            display: none
+    .header
+        .top_line
+            .burger
+                height: 30px
+                width: 30px
+                
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                .burger_line
+                    height: 2px
+                    width: 100%
+                    background: $orange
+
+    /*---------------- restaurant list------------------- */
+    .restrunt_list_main
+        .restrunt_list_main_top_line
+            background-image: url(../img/restrunt_card/main/main_green_line_sm.png)
+            .container
+                padding: 0 10px
+                .m_tl_icons
+                    display: none
+    .main   
+        .section_a
+            .container
+                .rest_item
+                    .right
+                        .second_line
+                            p:first-child
+                                font-size: 16px
+
+                .order_crytery
+                    margin-top: 10px
+                    flex-direction: column
+                    align-items: center
+                    width: 100%
+                .rest_items
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .rest_item
+                        margin-right: 0
+                    .item_rest_adv
+                        width: 90%
+                        flex-direction: column
+                        height: 280px
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-image: url(../img/restrunt_list/item_rest_adv_bg_mob.svg)
+    
+    /*---------------- restaurant card------------------- */
+
+@media screen and(max-width: 576px)
+
+    /*---------------- restaurant list------------------- */
+
+    .restrunt_list_main   
+        .section_a
+            .container
+                padding: 0
+                max-width: 100%
+                .rest_items
+                    & .rest_items_list_title
+                        margin-right: auto
+                        margin-left: 10px
+                    .rest_item
+                        width: 100%
+                        padding: 16px 0
+                        margin-bottom: 10px
+                        .right
+                            & .first_line
+                                & .icons
+                                    width: 100%
+                                    flex-direction: row
+                                    & .icon_descr
+                                        text-align: left
+                                & .title
+                                    display: none
+                                & .work_time
+                                    display: block
+                                    margin-right: 10px
+                            & .second_line
+                                & .min_price
+                                    width: 100%
+                                    padding: 0 16px
+                                    justify-content: space-between
+                                    .column
+                                        &:nth-child(1)
+                                            & p
+                                                &:nth-child(2)
+                                                    margin: 0
+                                                    text-align: left
+                                        &:nth-child(2)
+                                            width: 80%
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    margin: 0 auto
+                                                &:nth-child(2)
+                                                    text-align: center
+                                        &:nth-child(3)
+                                            width: 80%
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    margin: 0
+                                                    margin-left: auto
+                                                &:nth-child(2)
+                                                    margin: 0
+                                                    margin-left: auto
+                                                    text-align: right
+                                .work_time
+                                    display: none
+                            .third_line
+                                p 
+                                    padding: 0 16px
+                            & .icons
+                                padding-left: 15px
+                                justify-content: space-between
+                        & .left
+                            & .left_column
+                                width: 100%
+                                display: flex
+                                flex-direction: column
+                                align-items: baseline
+                                & .stars
+                                    padding-top: 20px
+                                    margin: 0
+                                    .stars_link
+                                        left: 55%
+                                        bottom: 16%
+                                        transform: translateX(113%)
+                                & .title
+                                    display: block         
+                .order_crytery
+                    padding: 0
+                    width: 100%!important
+                    flex-direction: column
+                    align-items: center
+                    & .order_crytery_title
+                        & h3
+                            margin-left: 10px
+                    .order_crytery_inner
+                        .meals 
+                            .chack_group
+                                flex-direction: column
+                                & .check_label
+                                    width: 100%
+                                    display: block
+                        .ordering_criteria
+                            .chack_group
+                                flex-direction: column
+
+                        & .min_amount
+                            .range_value
+                                max-width: 100%
+
+    .restrunt_list_main
+        .sidebar_adv
+            display: block  
+        .section_a
+            .container
+                .rest_item
+                    flex-direction: column
+                    height: auto
+                    width: 90%
+                    padding: 16px
+                    .left 
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                    .right
+                        & .first_line
+                            .work_time
+                                & p
+                                    & strong
+                                        font-size: 15px
+                        .second_line
+                            flex-direction: column
+                            align-items: center
+                            .work_time
+                                order: 1
+                            .min_price
+                                order: 2
+                                justify-content: space-between
+                                align-items: center
+                                .column
+                                    margin-right: 0
+                .order_crytery
+                    flex-direction: column
+                    align-items: center
+                    width: 300px
+                    & .order_crytery_title
+                        & button
+                            right: 1%
+                .rest_items
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .rest_item
+                        margin-right: 0
+                    .item_rest_adv
+                        width: 100%
+                        flex-direction: column
+                        height: 280px
+                        margin-bottom: 10px
+                        background-size: cover
+                        background-repeat: round
+                        background-image: url(../img/restrunt_list/item_rest_adv_bg_mob.png)
+
+    /*---------------- restaurant card------------------- */
+    .main
+        .section_a
+            .container
+                padding: 0
+                & .menu_container
+                    & .sorting_block
+                        & .buttons_wrapper
+                            & img
+                                margin-right: 10px
+                                margin-bottom: -1px
+                & .restrunt_menu_wrapper
+                    & .restrunt_menu
+                        & .menu_header
+                            & .menu_link
+                                border-radius: 0
+                                padding-top: 5px
+                .rest_item_wrapper
+                    & .rest_item_title
+                        padding-left: 10px
+                    & .rest_item
+                        flex-direction: column
+                        .right
+                            & .first_line
+                                & .icons
+                                    width: 100%
+                                    flex-direction: row
+                                    & .icon_descr
+                                        text-align: left
+                                & .title
+                                    display: none
+                                & .work_time
+                                    display: block
+                            & .second_line
+                                & .min_price
+                                    width: 100%
+                                    padding: 0 0 0 16px
+                                    justify-content: space-between
+                                    .column
+                                        &:nth-child(1)
+                                            & p
+                                                &:nth-child(2)
+                                                    margin: 0
+                                                    text-align: left
+                                        &:nth-child(2)
+                                            width: 80%
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    margin: 0 auto
+                                                &:nth-child(2)
+                                                    text-align: center
+                                        &:nth-child(3)
+                                            width: 80%
+                                            margin-right: 0
+                                            & p
+                                                &:nth-child(1)
+                                                    display: block
+                                                    margin: 0
+                                                    margin-left: auto
+                                                &:nth-child(2)
+                                                    margin: 0
+                                                    margin-left: auto
+                                                    text-align: right
+                                .work_time
+                                    display: none
+                            .third_line
+                                p 
+                                    padding: 0 0 0 16px
+                            & .icons
+                                padding-left: 15px
+                                justify-content: space-between
+                        & .left
+                            display: flex
+                            & .left_column
+                                width: 100%
+                                display: flex
+                                flex-direction: column
+                                align-items: baseline
+                                & .stars
+                                    padding-top: 20px
+                                    margin: 0
+                                    .stars_link
+                                        left: 55%
+                                        bottom: 16%
+                                        transform: translateX(113%)
+                                & .title
+                                    display: block
+                .order_crytery
+                    margin-top: 10px
+                    flex-direction: column
+                    align-items: center
+                    & .order_crytery_title
+                        margin: 0 10px
+                    .order_crytery_inner
+                        .meals 
+                            .chack_group
+                                flex-direction: column
+                                & .check_label
+                                    width: 100%
+                                    display: block
+                        .ordering_criteria
+                            .chack_group
+                                flex-direction: column
+
+                        & .min_amount
+                            .range_value
+                                max-width: 100% 
+                & .menu_container
+                    & .sorting_block
+                        & .buttons_wrapper
+                            display: flex
+                            & button
+                                font-size: 0
+                                width: 40px
+                                margin-right: 10px
+                        & .amount_of_dish
+                            & span
+                                & strong
+                                    display: none
+                    & button
+                        &.menu_item_btn
+                            &.add
+                                margin: 0 auto 0 auto
+                    & .list_view
+                        display: none
+                    & .square_view
+                        display: block
+                        & .items_group
+                            & .item
+                                & button
+                                    &.menu_item_btn
+                                        margin-top: 10px
+        & .section_b
+            & .container
+                padding-top: 0
+            & .title
+                & img
+                    margin-right: 15px
+
+    .restrunt_list_main
+        .restrunt_list_main_top_line
+            background-image: url(../img/restrunt_card/main/main_green_line_xs.png)
+            background-repeat: round
+
+@media screen and(max-width: 470px)
+    .restrunt_list_main   
+        .section_a
+             .container
+                .rest_item
+                    .left 
+                        .susi_logo
+                            margin-right: 20px
+
+                    .right
+                        .first_line
+                            flex-direction: column
+                            .title
+                                margin-bottom: 30px
+                            .icons
+                                padding-right: 0
+                                .icons_group
+                                    img 
+                                        margin: 0 3px
+                .restrunt_menu_wrapper
+                    .advertising
+                        display: block
+                        width: 100%
+                        background: $orange
+                        margin: 30px 0
+                        padding: 12px 20px 20px 20px
+                        .first_row
+                            display: flex
+                            justify-content: space-between
+                            color: white
+                            span
+                                margin: 0 3px
+                            p 
+                                text-align: center
+                        .second_row
+                            margin: 30px 0    
+                            color: white
+                        .third_row
+                            display: flex
+                            justify-content: center
+                            .to_eat_btn_white
+                                width: 120px
+                                height: 32px
+                                background: white
+                                color: $orange
+                                border: none
+                                outline: none
+                                text-transform: uppercase
+                                font-weight: bold
+                                border-radius: 30px
+                                cursor: pointer
+                                margin-right: 30px
+                            .close_white_btn
+                                width: 32px
+                                height: 32px
+                                background: white
+                                border-radius: 50px
+                                border: none    
+                                outline: none
+                                position: relative
+                                &:after
+                                    position: absolute
+                                    content: ''
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%, -50%)
+                                    background-image: url(../img/global/x-sign.svg)
+                                    background-position: center
+                                    width: 10px
+                                    height: 10px
+
+
+                    
+                
+
+
+
+    
+                
+    
+
+        
+
+
+                
+        
+        
+
+    

@@ -1,0 +1,77 @@
+@import 'global_settings'
+/*--------------------sales-page---------------------*/
+.section
+    &.s-sales
+        & .container
+            & .sales_cards
+                margin-top: 55px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-around
+                & .sales_inner
+                    display: flex
+                    flex-direction: column
+                    padding: 15px 15px 0 15px
+                    margin-bottom: 30px
+                    background-color: #ffffff
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    border-radius: 4px
+                    width: 22%
+                    position: relative
+                    transition: all .3s linear
+                    color: #000000
+                    &:hover
+                        transform: scale(1.03)
+                        box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.08)
+                    & .sales_image
+                        width: 100%
+                        position: relative
+                        color: #ffffff
+                        & img
+                            width: 100%
+                            height: auto
+                        & span
+                            font-weight: 700
+                            font-size: 20px
+                            position: absolute
+                            width: fit-content
+                            text-align: center
+                            display: block
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                    & .sales_header
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        text-align: center
+                        margin-bottom: 15px
+                        & img
+                            width: 20%
+                            height: auto
+                        & h2
+                            font-size: 16px
+                            font-weight: 700
+                        & span
+                            color: rgba(0, 0, 0, 0.4)
+                            font-size: 12px
+                    & .sales_bottom
+                        height: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        & p
+                            text-align: left
+                            font-size: 12px
+                            margin-top: 15px
+                            min-height: 17%
+                        & button
+                            margin: 0 auto
+                            margin-top: 10px
+                            margin-bottom: 15px
+        & button
+            &.menu_item_btn
+                width: 110px
+                &.add
+                    width: 180px
+                    margin: 10px auto 40px auto

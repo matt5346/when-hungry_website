@@ -1,0 +1,1369 @@
+@import 'global_settings'
+.main_lanches
+    background: $main_bg
+    .main_top_line  
+        height: 120px
+        width: auto
+        background-image: url(../img/restrunt_card/main/main_green_line.png)
+        transform: translateY(-10px)
+        background-repeat: no-repeat
+        background-size: cover
+        align-items: center
+        justify-content: flex-start
+        
+        .container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            height: 100%
+            & .top_line_column
+                display: flex
+                flex-direction: row
+                align-items: center
+
+            
+            
+            .m_tl_text
+                width: 50%
+                color: white
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                &:nth-child(3)
+                    
+                    margin: 0 20px
+                
+                h1 
+                    font-size: 20px
+                    font-weight: bold
+                    line-height: 27px
+                    max-width: 300px
+                    &:last-child
+                        max-width: 365px
+                p 
+                    font-size: 10px
+                    font-weight: normal
+                    a 
+                        color: white
+                        transition: 1.4s
+                        text-decoration: none
+                        border-bottom: 1px solid white
+                        transition: 0.2s
+                        font-size: 10px
+                        font-weight: normal
+                        &:hover
+                            border-bottom: 1px solid transparent
+                        
+                            
+            .m_tl_icons
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 70px
+                padding-right: 10px
+                width: 22%
+                border-right: 1px solid rgba(#FFFFFF, 0.3)
+                a
+                    .icon   
+                        height: 42px
+                        width: 42px
+                        background: white
+                        border-radius: 50%
+                        margin: 0 4px
+                        background-repeat: no-repeat
+                        background-position: center
+                    .icon1
+                        background-image: url(../img/restrunt_card/main/operator_1.svg)
+                    .icon2
+                        background-image: url(../img/restrunt_card/main/operator_2.svg)
+                    .icon3
+                        background-image: url(../img/restrunt_card/main/operator_3.svg)
+                    .icon4
+                        background-image: url(../img/restrunt_card/main/operator_4.svg)
+    .main_top_line
+        & .mobile_column
+            display: flex
+        & .address_form
+            display: flex
+            margin-top: 10px
+            & input 
+                width: 370px
+                height: 27px
+                border: none
+                background: transparent
+                border-bottom: 1px solid rgba(#ffffff, .3)
+            & input::placeholder
+                color: #ffffff
+                font-size: 16px
+                opacity: .3
+            & input:focus
+                opacity: 1
+                color: #ffffff
+                outline: none
+            & .m_tl_icons
+                &.main_page
+                    width: 33%
+                    border-right: none
+                    & .map
+                        background: #F17E00
+                        border-radius: 50%
+                        margin-left: 30px
+                        padding: 7px 10px
+                    & .micro
+                        background: #F17E00
+                        border-radius: 50%
+                        padding: 7px 10px
+                        margin-left: 10px
+                        margin-right: 120px
+                    & .search
+                        display: none
+                        background: #50CE1B
+                        border: none
+                        border-radius: 50%
+                        padding: 7px 10px
+                        margin-left: 10px
+                        margin-right: 120px
+            & .green_btn
+                &.main_btn
+                    width: 200px
+    .section_a
+        margin-bottom: 200px
+        
+        .container 
+            .order_lunch_wrapper
+                width: 100%
+                margin-top: -530px
+                h3 
+                    margin-bottom: 8px
+                    color: $orange
+                    font-weight: bold
+                    font-size: 16px
+
+            .order_lunch
+                max-width: 100%
+                min-height: 347px
+                background: white
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                padding: 20px
+                border-radius: 4px
+                .order_lunch_row
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                        
+                    .logo_name
+                        display: flex
+                        align-items: center
+                        img 
+                            width: 80px
+                            height: 80px
+                            margin-right: 20px
+                        .name
+                            h3 
+                                font-size: 14px
+                                font-family: 'Open Sans'
+                                font-style: normal
+                                font-weight: bold
+                            p 
+                                font-size: 12px
+                                margin-right: 20px
+                                font-family: 'Open Sans'
+                                font-style: normal
+                                font-weight: 300
+                                
+                    .min_amount_worktime
+                        width: 60%
+                        display: flex
+                        justify-content: space-between
+                        align-items: flex-start
+                        flex-wrap: wrap
+                        margin-top: 17px
+                        .column
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            width: 25%
+                                
+                            p 
+                                text-align: center
+                                
+                                &:first-child
+                                    font-size: 16px
+                                &:last-child
+                                    font-size: 12px
+                                    
+                                    color: rgba(black, 0.4)
+                                strong
+                                    font-family: 'Open Sans'
+                                    font-style: normal
+                                    font-weight: bold
+                                    font-size: 20px
+                            &:last-child
+                                margin-right: 0
+                                max-width: 160px
+                                p 
+                                    text-align: end
+                                    width: 100%
+                        & .bottom_column
+                            opacity: 0
+                            position: relative
+                            width: 100%
+                            text-align: center
+                            &.visible
+                                opacity: 1
+                            & img
+                                width: 54%
+                                margin-left: 4%
+                                height: auto
+                            & p
+                                position: absolute
+                                top: 40%
+                                left: 50%
+                                transform: translate(-50%, -50%)
+                                font-size: 10px
+                                & strong
+                                    font-size: 12px
+                                    color: $orange
+                .o_l_r_second
+                    margin-top: 0
+                    button 
+                        margin-right: 10px
+                    .dey_week
+                        display: flex
+                        .orange_sqr_button
+                            background: white
+                            border: none
+                            outline: none
+                            color: #F17E00
+                            padding: 5px
+                            border-radius: 4px
+                            -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            cursor: pointer
+                            width: 30px
+                            font-family: 'Open Sans'
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 14px
+                            margin-right: 5px
+                            &.active
+                                background: $orange
+                                color: white
+
+                        .compare
+                            border: none
+                            outline: none
+                            padding: 6px 14px 6px 36px
+                            position: relative
+                            color: $orange
+                            border: 1px solid $orange
+                            border-radius: 4px
+                            background: white
+                            cursor: pointer
+                            transition: 0.4s
+                            font-family: 'Open Sans'
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 14px
+                            text-transform: uppercase
+                            margin-left: 10px
+                            margin-right: 0px
+                            &:before
+                                content: ''
+
+                            &:after
+                                content: ''
+                                position: absolute
+                                top: 50%
+                                left: 14px
+                                width: 12px
+                                height: 9px
+                                background-image: url(../img/lanches/compare_buttton.svg)
+                                transform: translateY(-50%)
+                            &:hover
+                                box-shadow: 0px 0px 15px $orange
+                    & .left
+                        display: flex
+                        .orange_sqr_button
+                            width: 100%
+                            height: 27px
+                            padding: 0 15px
+                            background: white
+                            border: none
+                            outline: none
+                            color: #F17E00
+                            border-radius: 4px
+                            -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                            cursor: pointer
+                            font-family: 'Open Sans'
+                            font-style: normal
+                            font-weight: bold
+                            font-size: 14px
+                            margin-right: 5px
+                            &.active
+                                background: $orange
+                                color: white
+
+                .order_lunch_row_slider
+                    margin: 0 auto
+                    
+                    margin-top: 16px
+                    max-width: calc(100% - 28px)
+                    .slick-active
+                        outline: none
+
+                    .slick-dots
+                        li 
+                            width: 12px
+                            margin: 0 2px
+                            button
+                                position: relative
+                                &:before
+                                    visibility: hidden
+                                &:after
+                                    content: ''
+                                    position: absolute
+                                    height: 8px
+                                    width: 8px
+                                    background: white
+                                    border-radius: 50%
+                                    border: 1px solid $orange
+                    .slick-dots
+                        .slick-active 
+                            button
+                                &:after
+                                    background: $orange
+                                
+                                    
+                    
+                    .slick-next
+                        background-image: url(../img/lanches/slider_to_right.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -16px)
+                        cursor: pointer
+                        height: 30px
+                        width: 30px
+                        
+                        &:before
+                            display: none
+                    .slick-prev
+                        background-image: url(../img/lanches/slider_to_left.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -16px)
+                        cursor: pointer
+                        height: 30px
+                        width: 30px
+                        
+                        
+                        &:before
+                            display: none
+                    .item
+                        width: 186px
+                        height: 132px
+                        background: rgba(0, 0, 0, 0.04)
+                        border-radius: 8px
+                        overflow: hidden
+                        display: flex
+                        justify-content: space-between
+                        position: relative
+                        margin: 0 6px
+                        &:hover  .overlay
+                            opacity: 1
+                            background: rgba(black, 0.7)
+                            a 
+                                display: block
+                        .item_img
+                            img
+                                // transform: translateX(-20px)
+                                height: 100%
+                                max-width: 106px
+                        .item_price
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-around
+                            align-items: center
+                            margin: 0 auto 
+                            h4
+                                font-weight: 400
+                                font-size: 12px
+                                text-align: center
+                            p 
+                                font-size: 14px
+                                text-align: center
+                                width: 100%
+                                
+                                span 
+                                    color: $orange
+                        .overlay
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: center
+                            transition: all 0.3s
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            top: 0
+                            left: 0
+                            background: rgba(black, 0)
+                            opacity: 0
+                            
+                            
+                            a 
+                                display: block
+                                margin-bottom: 10px
+                                display: none
+                                
+
+                .fourth_row
+                    
+                    width: 100%
+                    // border: 1px solid red
+                    margin-top: 40px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .order_per_days
+                        display: flex
+                        align-items: center
+                        font-size: 12px
+                        input 
+                            width: 24px
+                            height: 20px
+                            border: 1px solid rgba(0, 0, 0, 0.2) 
+                            margin: 0 8px
+                            border-radius: 4px
+                            outline: none
+                    .fourth_row_calendar
+                        a
+                        
+                            color: black
+                            font-size: 12px
+                            position: relative
+                            
+                            &:before
+                                position: absolute
+                                content: ''
+                                top: -4px
+                                left: 0px
+                                width: 20px
+                                height: 21px
+                                background-image: url(../img/lanches/calendar.svg)
+                                transform: translate(-134%, 0%)
+                    .left
+                        display: flex
+                        justify-content: space-between
+                        flex-flow: wrap
+                        
+                        .left_firs_col
+                            display: flex
+                            align-items: center
+                            .order_per_days
+                                margin-right: 40px
+                            .fourth_row_calendar
+                                margin-right: 20px
+                        .left_second_col
+                            display: flex
+                            align-items: center
+                            .total_amount
+                                margin-left: 166px
+                                span 
+                                    color: $orange
+                        
+                            .number_person
+                                display: flex
+                                align-items: center
+                                p 
+                                    &:nth-child(1)
+                                        margin-right: 10px
+                                .minus
+                                    width: 14px
+                                    height: 14px
+                                    
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    
+                                    color: white
+                                    border-radius: 50%
+                                    position: relative
+                                    cursor: pointer
+                                    margin: 0 4px
+                                    
+                                    background-image: url(../img/global/btminus.png)
+                                    // &:after
+                                    //     position: absolute
+                                    //     content: ''
+                                    //     top: 50%
+                                    //     left: 50%
+                                    //     width: 6px
+                                    //     height: 6px
+                                    //     transform: translate(-50%, -50%)
+                                    //     background-image: url(../img/global/minus.svg)
+                                    //     background-repeat: no-repeat
+                                        
+                                    //     background-position: center
+                                        
+                                        
+                                        
+                                .plus
+                                    width: 14px
+                                    height: 14px
+                                    
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    
+                                    color: white
+                                    border-radius: 50%
+                                    position: relative
+                                    cursor: pointer
+                                    margin: 0 4px
+                                    background-image: url(../img/global/btplus.svg)
+                                    // &:after
+                                    //     position: absolute
+                                    //     content: ''
+                                    //     top: 50%
+                                    //     left: 50%
+                                    //     width: 6px
+                                    //     height: 6px
+                                    //     transform: translate(-50%, -50%)
+                                    //     background-image: url(../img/global/plus.svg)
+                                    //     background-repeat: no-repeat
+                                        
+                                    //     background-position: center
+                    .right
+                        button 
+                            transition: 0.4s
+                        //кейтеринг мероприятия под заказ
+            .events_per_order_wrapper
+                margin-top: 60px
+                width: 100%
+                
+                h3 
+                    color: $orange
+                    margin-bottom: 8px
+
+            .events_per_order
+                width: 100%
+                // min-height: 347px
+                background: white
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                padding: 20px
+                border-radius: 4px
+                display: flex
+                flex-direction: column
+
+                font-size: 12px
+                .row_1
+                    display: flex
+                    justify-content: baseline
+                    align-items: center
+                    flex-wrap: wrap
+                    & p
+                        &.row_text
+                            margin-top: 15px
+                            font-size: 12px
+                            width: 100%
+                    
+                    .select_wrap
+                        background: $main_bg
+                        margin-right: 30px
+                        & #type_of_event
+                            width: 180px
+                            height: 25px
+                            border-radius: 4px
+                            padding-left: 10px
+                            background-color: $main_bg
+                            appearance: none
+                            border: none
+                            background-image: url(../img/pop_up_cake/select_arrow_down2.svg)
+                            background-size: auto
+                            background-repeat: no-repeat
+                            background-position: 95% 56%
+                            margin: 0
+                            font-size: 12px
+                            color: rgba(black, 0.75)
+                    .budget_and_number_person
+                            display: flex
+                            align-items: center
+                            justify-content: baseline
+                            width: 40%
+                            .budget
+                                margin-right: 20px
+                                display: flex
+                                align-items: center
+                                & p
+                                    opacity: .6
+                                    font-weight: 700
+                                input 
+                                    width: 70px
+                                    height: 20px
+                                    border: 1px solid rgba(0, 0, 0, 0.2) 
+                                    margin: 0 8px
+                                    border-radius: 4px
+                                    outline: none
+                            .number_person
+                                display: flex
+                                align-items: center
+                                p 
+                                    &:nth-child(1)
+                                        margin-right: 10px
+                                .minus
+                                    width: 14px
+                                    height: 14px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    color: white
+                                    border-radius: 50%
+                                    position: relative
+                                    cursor: pointer
+                                    margin: 0 4px
+                                    background-image: url(../img/global/btminus.png)
+                                .plus
+                                    width: 14px
+                                    height: 14px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    color: white
+                                    border-radius: 50%
+                                    position: relative
+                                    cursor: pointer
+                                    margin: 0 4px
+                                    background-image: url(../img/global/btplus.svg)
+                    .row_1_calendar
+                        margin-left: 5%
+                        width: 10%
+                        a
+                            text-decoration: underline
+                            color: black
+                            font-size: 12px
+                            position: relative
+                            
+                            &:before
+                                position: absolute
+                                content: ''
+                                top: -4px
+                                left: 0px
+                                width: 20px
+                                height: 21px
+                                background-image: url(../img/lanches/calendar.svg)
+                                transform: translate(-134%, 0%)
+                .row_2
+                    width: 100%
+                    margin-top: 20px
+                    height: 80px
+                    textarea
+                        width: 100%
+                        height: 100%
+                        max-height: 80px
+                        max-width: 100%
+                        resize: none
+                        border-radius: 4px
+                        outline: none
+                        border: 1px solid rgba(0, 0, 0, 0.12)
+                        padding: 5px 25px 5px 8px
+                        font-size: 12px
+
+                .row_4
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    input
+                        margin: 8px 8px 8px 0
+                        height: 26px
+                        width: 100%
+                        border-radius: 4px
+                        outline: none
+                        border: 1px solid rgba(0, 0, 0, 0.12)
+                        padding: 5px 25px 5px 8px
+                        font-size: 12px
+                        &:last-child
+                            margin-right: 0
+                    .row_address
+                        width: 100%
+                        margin: 8px 8px 8px 0
+                        position: relative
+                        &:before
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 12px
+                            top: 50%
+                            left: 8px
+                            background-image: url(../img/global/small_map.svg)
+                            background-size: cover
+                            background-position: center
+                            transform: translateY(-50%)
+                        input 
+                            width: 100%
+                            height: 26px
+                            border-radius: 4px
+                            outline: none
+                            border: 1px solid rgba(0, 0, 0, 0.12)
+                            padding: 5px 25px
+                            font-size: 12px
+                .row_5
+                    text-align: center
+                    margin-top: 20px
+                    .menu_item_btn
+                        width: 190px
+                        height: 44px
+                        transition: 0.4s
+                        font-family: 'Open Sans'
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 14px
+                        
+                //торты под заказ
+            .kake_to_order_wrapper
+                margin-top: 60px
+                width: 100%
+                
+                
+                h3 
+                    color: $orange
+                    margin-bottom: 8px
+
+            .kake_to_order
+                width: 100%
+                min-height: 347px
+                background: white
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                padding: 20px
+                border-radius: 4px
+                display: flex
+                flex-direction: column
+
+                font-size: 12px
+                .row_1
+                    display: flex
+                    align-items: center
+                    flex-wrap: wrap
+                    margin-bottom: 20px
+                    .select_wrap
+                        background: $main_bg
+                        height: 25px
+                        margin-right: 30px
+                        border-radius: 4px
+                        & select
+                            height: 25px
+                            padding-left: 10px
+                            background-color: $main_bg
+                            appearance: none
+                            border: none
+                            margin: 0
+                            font-size: 12px
+                            color: rgba(black, 0.75)
+                            &#type_of_event
+                                width: 180px
+                                border-radius: 4px
+                                background-image: url(../img/pop_up_cake/select_arrow_down2.svg)
+                                background-size: auto
+                                background-repeat: no-repeat
+                                background-position: 95% 56%
+                            &#number_cake_levels
+                                width: 110px
+                                border-radius: 4px
+                                background-image: url(../img/pop_up_cake/select_arrow_down2.svg)
+                                background-size: auto
+                                background-repeat: no-repeat
+                                background-position: 95% 56%
+                            &#weight_of_cake
+                                width: 50px
+                                border-radius: 4px
+                                background-image: url(../img/pop_up_cake/select_arrow_down2.svg)
+                                background-size: auto
+                                background-repeat: no-repeat
+                                background-position: 87% 56%
+                    .row_1_calendar
+                        margin-left: 53px
+                        a
+                            text-decoration: underline
+                            color: black
+                            font-size: 12px
+                            position: relative
+                            
+                            &:before
+                                position: absolute
+                                content: ''
+                                top: -4px
+                                left: 0px
+                                width: 20px
+                                height: 21px
+                                background-image: url(../img/lanches/calendar.svg)
+                                transform: translate(-134%, 0%)
+                .row_2
+                    p 
+                        font-size: 12px
+                .row_3
+                    width: 100%
+                    margin-top: 26px
+                    textarea
+                        width: 100%
+                        height: 100%
+                        max-height: 80px
+                        max-width: 100%
+                        resize: none
+                        border-radius: 4px
+                        outline: none
+                        border: 1px solid rgba(0, 0, 0, 0.12)
+                        padding: 5px 25px 5px 8px
+                        font-size: 12px
+                .row_4
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    .add_photo
+                        opacity: 1
+                        position: relative
+                        margin-left: 26px
+                        font-family: 'Open Sans'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 12px
+                        margin-right: 30px
+                            
+                        &:before
+                            position: absolute
+                            content: ''
+                            top: 50%
+                            left: 0
+                            width: 20px
+                            height: 16px
+                            background-image: url(../img/global/img_icon.svg)
+                            transform: translate(-25px, -50%)
+                            opacity: 1
+
+
+                    .remove_photo 
+                        font-size: 12px
+                        font-weight: bold
+                        position: relative
+                        margin-left: 22px
+                        
+                        
+                        display: flex
+                        align-items: center
+                        p 
+                            font-family: 'Open Sans'
+                            font-style: normal
+                            font-weight: 300
+                            font-size: 12px
+                            line-height: 16px
+                            color: rgba(black, 0.4)
+                        button 
+                            height: 6px
+                            width: 6px
+                            background: none
+                            border: none
+                            background-image: url(../img/global/remove_photo.svg)
+                            opacity: 1
+                            margin-left: 3px
+                .row_6
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    input 
+                        width: 30%
+                        height: 26px
+                        border-radius: 4px
+                        outline: none
+                        border: 1px solid rgba(0, 0, 0, 0.12)
+                        padding: 5px 25px 5px 8px
+                        font-size: 12px
+                        margin-right: 8px
+                        &:last-child
+                    & .row_address
+                        margin-right: 0
+                        width: 100%
+                        margin-right: 8px
+                        position: relative
+                        &:before
+                            position: absolute
+                            content: ''
+                            width: 10px
+                            height: 12px
+                            top: 50%
+                            left: 8px
+                            background-image: url(../img/global/small_map.svg)
+                            background-size: cover
+                            background-position: center
+                            transform: translateY(-50%)
+                        input 
+                            width: 100%
+                            height: 26px
+                            border-radius: 4px
+                            outline: none
+                            border: 1px solid rgba(0, 0, 0, 0.12)
+                            padding: 5px 25px
+                            font-size: 12px
+                .row_7
+                    text-align: center
+                    margin-top: 20px
+                    .menu_item_btn
+                        width: 170px
+                        transition: 0.4s
+                        font-family: 'Open Sans'
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 14p
+                        width: 190px
+                        height: 44px
+
+
+            //конструктор wok
+            .create_wok_wrapper
+                margin-top: 60px
+                width: 100%                
+                
+                h3 
+                    color: $orange
+                    margin-bottom: 8px
+            .create_wok
+                width: 100% 
+                min-height: 347px
+                background: white
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                padding: 20px 20px 0 20px
+                border-radius: 4px
+                // display: flex
+                // flex-direction: column
+
+                font-size: 12px
+                .foundation
+                    display: flex
+                    
+                    .logo
+                        margin-left: 42px
+                        margin-top: 40px
+                        margin-right: 24px
+                    .foundation_constructor
+                        .osnova_buttons
+                            margin-bottom: 5px
+                            display: flex
+                            .osnova_btn
+                                background: none
+                                text-transform: none
+                                width: auto
+                                padding: 0 4px
+                                color: rgba(black, 0.75)
+                                height: 22px
+                                font-size: 12px
+                                box-shadow: none
+                                transition: 0.3s
+                                margin-bottom: 12px
+                                &:hover
+                                    background: $orange
+                                    color: white
+                        .nachinka_buttons
+                            margin-bottom: 22px
+                            .nachinka_btn
+                                background: none
+                                text-transform: none
+                                width: auto
+                                padding: 0 7px
+                                color: rgba(black, 0.75)
+                                
+                                height: 22px
+                                font-size: 12px
+                                box-shadow: none
+                                transition: 0.3s
+                                margin-bottom: 12px
+                                &:hover
+                                    background: $orange
+                                    color: white
+
+                            .active
+                                background: $orange
+                                color: white
+                        .add_meet
+                            font-weight: 700
+                            width: 290px
+                            height: 196px
+                            background: rgba(0, 0, 0, 0.04)
+                            border-radius: 8px
+                            padding: 15px
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+                            .add_meet_item
+                                display: flex
+                                justify-content: space-between
+                                p 
+                                    font-size: 12px
+                                    opacity: 0.75
+                                .plus_minus_meet_item
+                                    display: flex
+                                    align-items: center
+                                    p
+                                        font-size: 12px 
+                                        &:nth-child(1)
+                                            margin-right: 10px
+                                    .minus
+                                        width: 14px
+                                        height: 14px
+                                        
+                                        display: flex
+                                        align-items: center
+                                        justify-content: center
+                                        
+                                        color: white
+                                        border-radius: 50%
+                                        position: relative
+                                        cursor: pointer
+                                        margin: 0 4px
+                                        
+                                        background-image: url(../img/global/minus.svg)
+                                        
+                                        
+                                            
+                                            
+                                            
+                                    .plus
+                                        width: 14px
+                                        height: 14px
+                                        
+                                        display: flex
+                                        align-items: center
+                                        justify-content: center
+                                        
+                                        color: white
+                                        border-radius: 50%
+                                        position: relative
+                                        cursor: pointer
+                                        margin: 0 4px
+                                        background-image: url(../img/global/btplus.svg)
+                        .pick_size
+                            margin-top: 20px
+                            button
+                                width: 50px
+                                height: 24px
+                                border: none
+                                outline: none
+                                cursor: pointer
+                                background: rgba(0, 0, 0, 0.04)
+                                color: rgba(black, 0.75)
+                                margin: 0 -2px
+                                transition: 0.3s
+                                font-family: 'Open Sans'
+                                font-style: normal
+                                font-weight: 300
+                                font-size: 12px
+                                &:hover
+                                    background: $orange
+                                    color: white
+                            .pick_size_btn_1
+                                border-top-left-radius: 30px 
+                                border-bottom-left-radius: 30px 
+                            .pick_size_btn_3
+                                border-top-right-radius: 30px 
+                                border-bottom-right-radius: 30px 
+                            .active
+                                background: $orange
+                                color: white
+
+                h4 
+                    font-size: 16px
+                    color: rgba(black, 0.75)       
+                    margin-top: 15px
+                    margin-bottom: 15px     
+                .slider_wok
+                    margin: 25px auto 0 auto
+                    max-width: calc(100% - 30px)
+                    .slick-active
+                        outline: none
+
+                    .slick-dots
+                        bottom: 0
+                        li 
+                            button
+                                position: relative
+                                &:before
+                                    visibility: hidden
+                                &:after
+                                    content: ''
+                                    position: absolute
+                                    height: 10px
+                                    width: 10px
+                                    background: white
+                                    border-radius: 50%
+                                    border: 1px solid $orange
+                    .slick-dots
+                        bottom: 0
+                        .slick-active 
+                            button
+                                &:after
+                                    background: $orange
+                                
+                                    
+                    
+                    .slick-next
+                        background-image: url(../img/lanches/slider_to_right.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -80px)
+                        cursor: pointer
+                        
+                        
+                        width: 30px
+                        height: 30px
+                        &:before
+                            display: none
+                    .slick-prev
+                        background-image: url(../img/lanches/slider_to_left.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -80px)
+                        cursor: pointer
+                        width: 30px
+                        height: 30px
+                        
+                        &:before
+                            display: none
+                    .item_wok
+                        width: 186px
+                        
+                        background: #ffffff
+                        border-radius: 8px
+                        overflow: hidden
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: space-between
+                        position: relative
+                        margin: 0 10px
+                       
+                                    
+                                    
+                       
+                            
+
+
+
+                        .item_img_wok
+                            img
+                                // transform: translateX(-20px)
+                                height: auto
+                                width: 100%
+                                border-radius: 4px
+                                max-width: 186px
+                                max-height: 132px
+                        .item_price_wok
+                            
+                            display: flex
+                            flex-direction: column
+                            justify-content: flex-start
+                            align-items: center
+                            
+                            width: 186px
+                            margin-top: 12px
+                            .title
+                                h3 
+                                    color: black
+                                    margin-bottom: 0px
+                                    font-size: 16px
+                                    font-weight: bold
+                            .town
+                                p
+                                    color: rgba(black, 0.3)
+                                    font-weight: 300
+                                    font-size: 12px
+                                    
+                            .wok_price
+                                margin: 5px 0 14px
+                                p 
+                                    font-size: 12px
+                                span 
+                                    color: $orange
+                                    font-weight: bold
+                            .menu_item_btn
+                                width: 60px
+                                height: 24px
+                                font-family: 'Open Sans'
+                                font-style: normal
+                                font-weight: 600
+                                font-size: 12px
+                                margin-bottom: 14px
+                .slider_wok_2
+                    margin: 15px auto 0 auto
+                    max-width: calc(100% - 30px)
+                    .slick-active
+                        outline: none
+
+                    .slick-dots
+                        bottom: 0
+                        li 
+                            button
+                                position: relative
+                                &:before
+                                    visibility: hidden
+                                &:after
+                                    content: ''
+                                    position: absolute
+                                    height: 10px
+                                    width: 10px
+                                    background: white
+                                    border-radius: 50%
+                                    border: 1px solid $orange
+                    .slick-dots
+                        bottom: 0
+                        .slick-active 
+                            button
+                                &:after
+                                    background: $orange
+                                
+                                    
+                    
+                    .slick-next
+                        background-image: url(../img/lanches/slider_to_right.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -80px)
+                        width: 30px
+                        height: 30px
+                        cursor: pointer
+                        &:before
+                            display: none
+                    .slick-prev
+                        background-image: url(../img/lanches/slider_to_left.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                        transform: translate(0%, -80px)
+                        width: 30px
+                        height: 30px
+                        cursor: pointer
+                        
+                        &:before
+                            display: none
+                    .item_wok
+                        width: 186px
+                        
+                        background: #ffffff
+                        border-radius: 8px
+                        overflow: hidden
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: space-between
+                        position: relative
+                        margin: 0 10px
+                       
+                                    
+                                    
+                       
+                            
+
+
+
+                        .item_img_wok
+                            img
+                                // transform: translateX(-20px)
+                                
+                                width: 100%
+                                max-width: 186px
+                                max-height: 132px
+                                border-radius: 4px
+                        .item_price_wok
+                            
+                            display: flex
+                            flex-direction: column
+                            justify-content: flex-start
+                            align-items: center
+                            
+                            width: 186px
+                            margin-top: 12px
+                            .title
+                                h3 
+                                    color: black
+                                    margin-bottom: 0px
+                                    font-size: 16px
+                                    font-weight: 600
+                            .town
+                                p
+                                    color: rgba(black, 0.3)
+                                    font-size: 12px
+                                    font-weight: 300
+                            .wok_price
+                                margin: 5px 0 14px
+                                span 
+                                    color: $orange
+                            .menu_item_btn
+                                width: 70px
+                                height: 24px
+                                font-family: 'Open Sans'
+                                font-style: normal
+                                font-weight: 600
+                                font-size: 12px
+                                margin-bottom: 14px
+                            
+                            
+                        
+                                
+                             
+                            
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+                    
+                        
+
+
+
+
+
+                            
+
+
+                            
+
+
+    .section_b
+        padding-bottom: 60px
+        margin-top: 200px
+        
+        .container
+            position: relative
+            border-top: 1px solid rgba(0, 0, 0, 0.12)
+            padding-top: 60px!important
+            
+        .title
+            display: flex   
+            color: $green
+            align-items: center
+            margin-bottom: 24px
+            img 
+                margin-right: 6px
+            h1 
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                max-width: 141px
+                text-transform: uppercase
+        p 
+            text-align: justify
+            font-family: Open Sans
+            font-style: normal
+            font-weight: 300
+            font-size: 12px

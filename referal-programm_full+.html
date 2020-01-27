@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Карточка ресторана</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top_line" id="top_line">
+            <div class="container">
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/restrunt_card/header/top_line_logo.svg" alt="">
+                        </a>
+                    
+                    </div>
+                    
+                    <div class="options">
+
+                        <div class="select_wrap city">
+                                <img src="img/restrunt_card/header/map_icon.svg" alt="">
+                                <select class="select" name="city" id="city">
+                                    <option value="city1">Москва</option>
+                                    <option value="city2">Санкт-Петербург</option>
+                                    <option value="city3">Воронеж</option>
+                                    <option value="city4">Краснодар</option>
+                                    <option value="city5">Тула</option>
+                                    <option value="city6">Ростов</option>
+                            
+                                </select>
+                            </div>
+        
+                        <div class="select_wrap language">
+                            <img src="img/restrunt_card/header/icon-globe.svg" alt="">
+                            <select class="select" name="language" id="language">
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                                <option value="kz">KZ</option>
+                        
+                            </select>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                 
+                <!-- <div class="search">
+                    <input  class="search_inp" type="text" placeholder="поиск">
+                    <div class="search_logo">
+                        <img src="img/restrunt_card/header/search.svg" alt="">
+                    </div>
+
+                </div>   -->
+                <div class="right_side">
+                    <div class="enter_sign_up">
+                        <p>Вход/Регистрация</p>
+                        <div class="person_icon">
+                            <img src="img/restrunt_card/header/person.svg" alt="">
+                        </div>
+                    
+                    </div>
+                    <button class="basket_btn"><span>Корзина</span></button>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="header_img" id="header_img">
+            <div class="container">
+                <div class="header_img_logo">
+                    <img src="img/restrunt_card/header/header_logo.svg" alt="header_logo">
+                </div>
+            </div>
+            
+
+        </div>
+
+    </header>
+    <main class="main" id="main">
+
+
+        <div class="top_line">
+                <div class="container">
+                    <h1>Партнерская программа</h1>
+                </div>
+            </div>
+
+        <!----------Section Earn------------->
+
+        <section class="section s-earn">
+            <div class="container">
+                <h1>Зарабатывай с нами!</h1>
+
+                <div class="referal_types">
+                    <div class="type_box">
+                        <div class="type_description">
+                            <h2>По ссылке</h2>
+                            <p>Все очень просто – приводите новых клиентов 
+                                на <a href="#">хочу-поесть.рф</a> и получайте 50% нашей 
+                                прибыли от каждого заказа.Заработать можно 
+                                разными способами, выбирай один или 
+                                воспользуйся всеми.Зарегистрируйся на сайте 
+                                и генерируй свою реферальную ссылку, которую 
+                                можно отправить друзьям, поделиться в соцсетях 
+                                или опубликовать на сайте или в блоге. Ты 
+                                можешь сделать реферальную ссылку на любую 
+                                страницу сайта <a href="#">хочу-поесть.рф</a></p>
+                        </div>
+
+                        <div class="type_share">
+                            <div class="copy_box">
+                                <div class="copy_info">
+                                    <span type="text" class="earn_input">https://xn----jtbzbeohcqv6d.xn--p1ai/promocode/admin</span>
+                                </div>
+                                <button class="copy"><img src="./img/referals/copy.svg" alt=""></button>
+                            </div>
+                            <div class="share_socials">
+                                <span href="#">Поделиться с друзьям</span>
+                                <img src="./img/blog/vk.svg" alt="">
+                                <img src="./img/blog/fb.svg" alt="">
+                                <img src="./img/blog/odkl.svg" alt="">
+                                <img src="./img/blog/whapp.svg" alt="">
+                                <img src="./img/blog/tlg.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="type_box">
+                        <div class="type_description">
+                            <h2>По промо-коду</h2>
+                            <p>Зарегистрируйте свой личный промокод, 
+                                который вы можете разместить не только в 
+                                интернете, но и на любом офф-лайн носителе.</p>
+                        </div>
+                        
+
+                        <div class="type_share">
+                            <div class="copy_box">
+                                <div class="copy_info promo">
+                                    <span type="text" class="earn_input">admin</span>
+                                </div>
+                                <button class="copy"><img src="./img/referals/copy.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="type_box">
+                        <div class="type_description">
+                            <h2>По баннеру</h2>
+                            <p>Вы можете выбрать любой понравившийся баннер и 
+                                разместить его на сайте или в социальной сети 
+                                прямо сейчас</p>
+                        </div>
+
+                        <div class="type_share">
+                            <div class="banners_box">
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_1.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_2.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_3.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_4.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_5.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_6.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_7.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+
+                                <div class="banner_item">
+                                    <h4>Баннер, 10х10.jpg</h4>
+                                    <img src="./img/referals/banner_8.png" alt="">
+                                    <button class="menu_item_btn">Получить код</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section s-table_partners">
+                <div class="container">
+                    <h1>Лучшие партнёры месяца</h1>
+
+                    <div class="table_box">
+
+                            <table class="table_content">
+
+                                <tr class="table_row active">
+                                    <th>Логин</th>
+                                    <th>Доход</th>
+                                    <th>Заработано</th>
+                                </tr>
+        
+                                <tr class="table_row">
+                                    <td class="link">login@domail.com</td>
+                                    <td class="order">+2 заказов</td>
+                                    <td class="price">500 руб</td>
+                                </tr>
+        
+                                <tr class="table_row">
+                                    <td class="link">user@mail.com</td>
+                                    <td class="order">+3 заказов</td>
+                                    <td class="price">600 руб</td>
+                                </tr>
+        
+                                <tr class="table_row">
+                                    <td class="link">person@domail.com</td>
+                                    <td class="order">+4 заказов</td>
+                                    <td class="price">700 руб</td>
+                                </tr>
+        
+        
+                            </table>
+        
+                            <button type="button" class="menu_item_btn add">
+                                Показать еще
+                                <img src="./img/restrunt_list/add_more.svg" alt="">
+                            </button>
+                    </div>
+
+
+                </div>
+            </section>
+
+        <section class="section s-referal_description">
+            <div class="container">
+
+                <div class="rules">
+                    <h1>ПРАВИЛА ПАРТНЁРСКОЙ ПРОГРАММЫ</h1>
+                    <p>Принимать участие в партнерской программе может 
+                        любой зарегистрированный и подтвердивший свой email 
+                        пользователь сайта <a href="#">www.хочу-поесть.рф</a></p>
+                    <p>Каждый зарегистрированный пользователь получает на телефон 
+                        личный доступ в партнерский аккаунт, где видит всю статистику 
+                        по проведенным заказам и начислениям;</p>
+                    <p>Для приглашения пользователей, необходимо использовать ссылку, 
+                        баннеры и промо-коды, сформированные с данной партнерской 
+                        программе;</p>
+                    <p>Вознаграждение начисляется с заказа каждого 
+                        активного партнера и начисляется автоматически;</p>
+                    <p>Вознаграждение рассчитывается с суммы, получаемой 
+                        сервисом <a href="#">www.хочу-поесть.рф</a> от ресторанов;</p>
+                    <p>Партнерская программа действует 2 года с момента приглашения 
+                        пользователя;</p>
+
+                    <p>Все полученные в рамках партнерской программы 
+                        средства учитываются на балансе пользователя и могут быть 
+                        выведены по заявке пользователя на карту или электронные
+                        кошельки WebMoney или QIWI;</p>
+
+                    <p>Администрация сайта <a href="#">www.хочу-поесть.рф</a> вправе внести 
+                        изменения в правила партнерской программы, опубликовав изменения;</p>
+
+                    <p>Пользователь, участвующий в партнерской программе, обязуется не 
+                        размещать партнерскую ссылку в скрытом виде, включая, но не 
+                        ограничиваясь такими способами ее размещения как: невидимый или 
+                        плохо видимый фрейм, автоматический редирект без перехода по ссылке, 
+                        CAP и т.п. Обязуется не размещать некачественные ссылки на сайт 
+                        <a href="#">www.хочу-поесть.рф</a> не привлекать на сайт некачественный трафик, 
+                        ботов и т.п. Не использовать агрессивные виды рекламы: попандеры, кликандеры
+                        и проч. Не размещать контекстную рекламу по брендовым запросам. 
+                        Не задействовать для привлечения пользователей несанкционированные 
+                        рассылки или спам, тем более от лица <a href="#">www.хочу-поесть.рф</a>. И не 
+                        задействовать любые иные способы, которые могут ввести пользователей 
+                        в заблуждение и нанести ущерб имиджу сервиса <a href="#">www.хочу-поесть.рф</a> 
+                        или спровоцировать санкции к www.хочу-поеcть.рф со стороны поисковых системПартнерская программа действует 2 года с момента приглашения 
+                        пользователя;</p>
+        
+                </div>
+
+                <div class="work_explanation">
+                    <h1>КАК ЭТО РАБОТАЕТ?</h1>
+
+                    <p>Генерируете рекламный баннер, 
+                        где располагается ваш личный промо-код или 
+                        реферальную ссылку;</p>
+                    <p>Вы размещаете промо-код или реферальную 
+                        ссылку на своем любом ресурсе;</p>
+                    <p>все, кто прошёл и зарегистрировался на сайте <a href="#">www.хочу-поесть.рф</a>
+                        по вашей ссылке и промо-коду, привязываются к Вашему личному 
+                        кабинету. В конце месяца Вы получаете 50% от прибыли, которую 
+                        принесли Ваши клиенты, «ХОЧУ-ПОЕСТЬ». Количество человек и сумма 
+                        потенциальной выплаты отслеживается в Личном кабинете; Вам надоел 
+                        наш баннер или ссылка? Сделайте новый или снимите его с размещения 
+                        – мы все равно будем платить Вам 50% от прибыли, которую приносят 
+                        Ваши клиенты сервису доставки еды «ХОЧУ-ПОЕСТЬ». Потолка выплат 
+                        нет, сколько бы не пришло людей по вашей ссылке или промо-коду, 
+                        вы все равно будете получать 50% от прибыли хочу-поесть.рф в 
+                        течении 2-х лет; Простой пример расчета: при условном среднем 
+                        чеке заказа в 1200 руб . мы получаем 130-150 руб ., что составляет 
+                        наши 10-15%, наш партнер соответственно получает из одного заказа 
+                        75 рублей . Итого, сколько пассивного дохода получите Вы, знаете 
+                        только вы сами, так как только вам известен реальный охват вашей 
+                        аудитории. К тому вы сами решаете сколько раз разметить нашу рекламу 
+                        у себя. Нам отдел маркетинга постарается сделать ее максимально 
+                        адаптивной для вашей ЦА;</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section s-referal_form">
+            <div class="container">
+                <h1>ПРИСОЕДИНЯЙТЕСЬ К ПАРТНЁРСКОЙ ПРОГРАММЕ!</h1>
+                <form action="" class="order_form" method="POST">
+                        
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                Ваше имя<span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                Ваша фамилия  <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                Город <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                user@domain.com <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                пароль <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                повторите пароль  <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="input_order">
+                            <input type="text" name="" class="order" required>
+                            <div class="placeholder">
+                                +7(__)___ __ __<span>*</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info_agreement">
+                            <input type="checkbox" name="" id="post">
+                            <label for="post" id="info_label"></label>
+                            <label for="post">Я принимаю<a href="#"> условия пользовательского соглашения</a></label>
+                            
+                        </div>
+
+                        <div class="buttons_box">
+                            <button type="submit" id="order_button" class="menu_item_btn">Присоединиться</button>
+                            <button id="order_button" class="menu_item_btn referal">ЗАРАБОТАТЬ БОНУСЫ</button>
+                        </div>
+
+                        
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!--------Footer---------->
+
+    <footer class="footer" id="footer">
+        <img src="img/restrunt_card/footer/footer_big_phone.svg" alt="big_phone" class="footer_big_phone">
+        <div class="footer_content">
+            <div class="container">
+                
+
+                <div class="first_row">
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">О проекте</a> </li>
+                            <li> <a href="@">Для ресторанов и служб доставки</a> </li>
+                            <li> <a href="@">Пользовательское соглашение</a> </li>
+                            <li> <a href="@">Бонусная программа</a> </li>
+                            <li> <a href="@">Контакты</a> </li>
+                            <li> <a href="@">Блог</a> </li>
+                            <li class="footer_gift" ><a href="@">Подарки</a> </li>
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">Доставка пиццы</a> </li>
+                            <li> <a href="@">Доставка суши</a> </li>
+                            <li> <a href="@">Доставка закусок</a> </li>
+                            <li> <a href="@">Здоровое питание</a> </li>
+                            <li> <a href="@">Доставка бургеров</a> </li>
+                            <li> <a href="@">Доставка десертов</a> </li>
+                            <li> <a href="@">Доставка раков</a> </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        
+                        <ul>
+                            <li> <a href="#">Бизнес-ланчи</a> </li>
+                            <li> <a href="#">Доставка пирогов</a> </li>
+                            <li> <a href="#">Доставка шашлыков</a> </li>
+                            <li> <a href="#">Доставка салатов</a> </li>
+                            <li> <a href="#">Доставка тортов</a> </li>
+                            <li> <a href="#">Доставка кофе</a> </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="second_row">
+                    <h2>Мы везде</h2>
+                    <div class="footer_icons">
+                        <a href="#"><img src="img/restrunt_card/footer/vk.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/facebook.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/ok.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/insta.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/youtoobe.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/twitter.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/telega.svg" alt="vk_icon"></a>     
+                    </div>
+                    <p>Acheive right now</p>
+                </div>
+                <div class="third_row">
+                    <div class="column">
+                        <div class="open_map_wrapp">
+                            <a href="#" class="open_map">Открой</a>
+                        </div>
+                        <img src="img/global/wte_footer.svg" alt="" class="footer_logo">
+                        <p>В своем городе</p>
+                    </div>
+                    <div class="column">
+                        <p>Заказывайте еще быстрее<br>
+                            через мобильное приложение
+                        </p>
+                        <div class="google_apple">
+                            <a href="#"><img src="img/restrunt_card/footer/google_play.svg" alt="google_play"></a>
+                            <a href="#"><img src="img/restrunt_card/footer/app_store.svg" alt="app_store"></a>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+        <div class="footer_bottom_line">
+            <div class="container">
+                <div class="copyright">
+                    <img src="img/restrunt_card/footer/copy_right.svg" alt="">
+                    <p>"Хочу поесть" Все права защищены</p>
+                </div>
+                <div class="flags">
+                    <a href="#"><img src="img/restrunt_card/footer/ukr.svg" alt="ukraine"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/belarus.svg" alt="belarus"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/kaz.svg" alt="kz"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/euro.svg" alt=""></a>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+   
+
+
+    
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>

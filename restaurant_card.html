@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Карточка ресторана</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top_line" id="top_line">
+            <div class="container">
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/restrunt_card/header/top_line_logo.svg" alt="">
+                        </a>
+                    
+                    </div>
+                    
+                    <div class="options">
+
+                        <div class="select_wrap city">
+                                <img src="img/restrunt_card/header/map_icon.svg" alt="">
+                                <select class="select" name="city" id="city">
+                                    <option value="city1">Москва</option>
+                                    <option value="city2">Санкт-Петербург</option>
+                                    <option value="city3">Воронеж</option>
+                                    <option value="city4">Краснодар</option>
+                                    <option value="city5">Тула</option>
+                                    <option value="city6">Ростов</option>
+                            
+                                </select>
+                            </div>
+        
+                        <div class="select_wrap language">
+                            <img src="img/restrunt_card/header/icon-globe.svg" alt="">
+                            <select class="select" name="language" id="language">
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                                <option value="kz">KZ</option>
+                        
+                            </select>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                 
+                <!-- <div class="search">
+                    <input  class="search_inp" type="text" placeholder="поиск">
+                    <div class="search_logo">
+                        <img src="img/restrunt_card/header/search.svg" alt="">
+                    </div>
+
+                </div>   -->
+                <div class="right_side">
+                    <div class="enter_sign_up">
+                        <p>Вход/Регистрация</p>
+                        <div class="person_icon">
+                            <img src="img/restrunt_card/header/person.svg" alt="">
+                        </div>
+                    
+                    </div>
+                    <button class="basket_btn"><span>Корзина</span></button>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="header_img" id="header_img">
+            <div class="container">
+                <div class="header_img_logo">
+                    <img src="img/restrunt_card/header/header_logo.svg" alt="header_logo">
+                </div>
+            </div>
+            
+
+        </div>
+
+    </header>
+    <main class="main" id="main">
+
+            <div class="main_top_line">
+                    <div class="container">
+                        <div class="top_line_column">
+                            <div class="m_tl_text">
+                                <h1>Получи 100 рублей на телефон при любом заказе</h1>
+                                <p>Введите адрес доставки <a  href="#">Пользовательское соглашение</a> </p>
+            
+                            </div>
+                            <div class="m_tl_icons">
+                                <a href="#"><div class="icon icon1"></div></a>
+                                <a href="#"><div class="icon icon2"></div></a>
+                                <a href="#"><div class="icon icon3"></div></a>
+                                <a href="#"><div class="icon icon4"></div></a>
+                                <!-- <div class="icon"></div>
+                                <div class="icon"></div>
+                                <div class="icon"></div>
+                                <div class="icon"></div> -->
+                            </div>
+                            <div class="m_tl_text">
+                                <h1>Получи 200 рублей за регистрацию на бонусный счёт</h1>
+                            </div>
+                            <button class="green_btn">Получить</button>
+                            
+                            </div>      
+                        </div>
+    
+                
+                </div>
+
+        <section class="section_a">
+            <div class="container ">
+                <aside class="order_crytery">
+                    <div class="order_crytery_title">
+                        <h3>Критерии</h3>
+                        <button type="button" class="choice_toggle" id="restaurant_toggle"></button>
+                    </div>
+                    <div class="order_crytery_inner" id="restaurant_crytery_inner">
+                        <div class="meals">
+                            <h3>Блюда</h3>
+                            <div class="chack_group">
+                                <div class="dishes_check_box">
+                                    <label class="check_label">
+                                        <input type="checkbox" value="1" name="choose">
+                                        Пицца
+                                        <span> </span>
+                                    </label>
+                                    <div class="dish_subcategory_one">
+                                        <div class="subcategoryOne_check_box">
+                                            <label class="check_label">
+                                                <input type="checkbox" value="2" name="choose">
+                                                Суши
+                                                <span> </span>
+                                            </label>
+                                            <div class="dish_subcategory_two">
+                                                <label class="check_label">
+                                                    <input type="checkbox" value="1" name="choose">
+                                                    Пицца
+                                                    <span> </span>
+                                                </label>
+                                                <label class="check_label">
+                                                    <input type="checkbox" value="2" name="choose">
+                                                    Суши
+                                                    <span> </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="subcategoryOne_check_box">
+                                            <label class="check_label">
+                                                <input type="checkbox" value="1" name="choose">
+                                                Пицца
+                                                <span> </span>
+                                            </label>
+                                        </div>
+                                        <div class="subcategoryOne_check_box">
+                                            <label class="check_label">
+                                                <input type="checkbox" value="3" name="choose">
+                                                Роллы
+                                                <span> </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dishes_check_box">
+                                    <label class="check_label">
+                                        <input type="checkbox" value="2" name="choose">
+                                        Суши
+                                        <span> </span>
+                                    </label>
+                                    <div class="dish_subcategory_one">
+                                        <label class="check_label">
+                                            <input type="checkbox" value="2" name="choose">
+                                            Суши
+                                            <span> </span>
+                                        </label>
+                                        <label class="check_label">
+                                            <input type="checkbox" value="1" name="choose">
+                                            Пицца
+                                            <span> </span>
+                                        </label>
+                                        <label class="check_label">
+                                            <input type="checkbox" value="3" name="choose">
+                                            Роллы
+                                            <span> </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="dishes_check_box">
+                                    <label class="check_label">
+                                        <input type="checkbox" value="3" name="choose">
+                                        Роллы
+                                        <span> </span>
+                                    </label>
+                                </div>
+                                <div class="dishes_check_box">
+                                    <label class="check_label">
+                                        <input type="checkbox" value="4" name="choose">
+                                        Бургеры
+                                        <span> </span>
+                                    </label>
+                                </div>
+                                <div class="dishes_check_box">
+                                    <label class="check_label">
+                                        <input type="checkbox" value="5" name="choose">
+                                        Напитки
+                                        <span> </span>
+                                    </label>
+                                </div>               
+                            </div>
+                
+                        </div>
+                        <div class="min_amount">
+                            <h3>Минимальная сумма заказа</h3>
+                            <div class="range_value">
+                                <p id="display_range_value_2">5000</p>
+                            </div>
+                            <div class="change_range">
+                                <input type="range" id="min_amount_range_2" min="0" max="10000" stap="1" value="5000"
+                                    name="min_amount_range">
+                            </div>
+                
+                        </div>
+                        <div class="ordering_criteria">
+                            <h3>Критерии заказа</h3>
+                            <div class="chack_group">
+                                <label class="check_label">
+                                    <input type="checkbox" value="1" name="choose">
+                                    Оплата картой онлайн
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="2" name="choose">
+                                    Оплата наличными
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="3" name="choose">
+                                    Оплата картой курьеру
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="4" name="choose">
+                                    Оплата бонусными рублями
+                                    <span> </span>
+                                </label>
+                
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </aside>
+
+                    <!-- adding sidebar from separate html file -->
+                    <!-- <link rel="import" href="order_crytery.html"> 
+                    <script> 
+                        var dist = document.querySelector('.section_a .container')
+                        var doc = document.querySelectorAll('link[rel="import"]'); 
+                        for(i of doc) { 
+                        var cool = i.import; 
+                        var go = cool.querySelector('.order_crytery'); 
+                        dist.appendChild(go.cloneNode(true)); 
+                        } 
+                    </script> -->
+                    <!-- adding sidebar from separate html file -->
+                    
+                    
+                <div class="rest_item_wrapper">
+                    <h3 class="rest_item_title">
+                        О ресторане
+                    </h3>
+                    
+                    <div class="rest_item">
+                            <div class="left">
+
+                                <div class="susi_logo">
+                                    <img src="img/restrunt_list/susi_ears.svg" alt="">
+                                </div>
+
+                                <div class="left_column">
+
+                                    <div class="title">
+                                        <h4>Планета суши</h4>
+                                        <p>Кухня: Китайская, Японская</p>
+                                    </div>
+
+                                    <div class="stars">
+                                            <label class="check_label">
+                                                <input type="checkbox" value="star_1" name="choose">
+                                                
+                                                <span> </span>
+                                            </label>
+                                            <label class="check_label">
+                                                <input type="checkbox" value="star_2" name="choose">
+                                                
+                                                <span> </span>
+                                            </label>
+                                            <label class="check_label">
+                                                <input type="checkbox" value="star_3" name="choose">
+                                                
+                                                <span> </span>
+                                            </label>
+                                            <label class="check_label">
+                                                <input type="checkbox" value="star_4" name="choose">
+                                                
+                                                <span> </span>
+                                            </label>
+                                            <label class="check_label">
+                                                <input type="checkbox" value="star_5" name="choose">
+                                                
+                                                <span> </span>
+                                            </label>
+                                            <a href="#" class="stars_link">Отзывы</a>
+            
+                                    </div>
+                                </div>
+    
+    
+    
+                            </div>
+                            <div class="right">
+                                <div class="first_line">
+                                    <div class="title">
+                                        <h4>Планета суши</h4>
+                                        <p>Кухня: Китайская, Японская</p>
+                                    </div>
+                                    <div class="icons">
+                                        <div class="icons_column">
+                                            <div class="icons_group">
+                                                <img src="img/restrunt_card/main/wallet.svg" alt="">
+                                                <img  src="img/restrunt_card/main/credit_card.svg" alt="">
+                                                <img  class="active" src="img/restrunt_card/main/pig.svg" alt="">
+                                                <img src="img/restrunt_card/main/gift.svg" alt="">
+                                                <img src="img/restrunt_card/main/pie.svg" alt="">
+                                            </div>
+                                            
+                                            <div class="icon_descr">
+                                                <p>cash-back 1%</p>
+                                            </div>
+                                        </div>
+    
+    
+                                        <div class="work_time">
+                                            <div class="column">
+                                                <p> <strong>11:30 - 23:00</strong></p>
+                                                <p>время работы</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="second_line">
+                                    <div class="min_price">
+                                        <div class="column">
+                                            <p> <strong>500</strong> руб</p>
+                                            <p>минимальная сумма</p>
+                                        </div>
+                                        <div class="column">
+                                            <p>От <strong>0</strong> руб</p>
+                                            <p>бесплатная доставка</p>
+                                        </div>
+                                        <div class="column">
+                                            <p> <strong>90</strong> мин</p>
+                                            <p>время доставки</p>
+                                        </div>
+                                    </div>
+                                    <div class="work_time">
+                                        <div class="column">
+                                            <p> <strong>11:30 - 23:00</strong></p>
+                                            <p>время работы</p>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div class="third_line">
+                                    <p>Служба доставки еды "ХОЧУ-ПОЕСТЬ.РФ" в городе Москва - это свыше 1000 блюд и напитков, которые привезут вам домой или в офис без, в городе Москва - это свыше 1000 блюд и напитков, которые привезут вам домой или в офис.</p>
+        
+                                </div>
+                                
+        
+                            </div>
+        
+                        </div>  
+
+                </div>
+
+                <div class="restrunt_menu_wrapper">
+ 
+                    <div class="menu_container">
+                        <div class="restrunt_menu">
+                            <div class="menu_header">
+            
+                                <div class="menu_link active">
+                                    <span>Меню</span>
+                                </div>
+            
+                                <div class="menu_link">
+                                    <span>Описание</span>
+                                </div>
+            
+                                <div class="menu_link">
+                                    <span>Описание</span>
+                                </div>
+            
+                            </div>
+            
+            
+            
+                        </div>
+                        <div class="sorting_block">
+            
+                                <div class="amount_of_dish">
+            
+                                        <span class="show"><strong>Показать по:</strong></span>
+            
+                                        <div class="custom-select-wrapper">
+                                            <div class="custom-select">
+                                                <div class="custom-select_trigger"><span>12</span>
+                                                    <img src="./img/restrunt_card/main/drop_arrow.svg" alt="">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="custom-options">
+                                                    <span class="custom-option" data-value="9">9</span>
+                                                    <span class="custom-option" data-value="10">10</span>
+                                                    <span class="custom-option" data-value="11">11</span>
+                                                    <span class="custom-option selected" data-value="12">12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+            
+                                </div>
+            
+                                <div class="buttons_wrapper">
+            
+                                    <button type="button" class="menu_item_btn">
+                                        <img src="./img/restrunt_card/main/square.svg" alt="">
+                                        Плиткой
+                                    </button>
+                                    
+                                    <button type="button" class="menu_item_btn list_active">
+                                        <img src="./img/restrunt_card/main/list.svg" alt="">
+                                        Списком
+                                    </button>
+            
+                                </div>
+                        </div>
+            
+                        <div class="list_view">
+                            <div class="dishes_values">
+                                <span>Название</span>
+                                <span>Вес/Размер</span>
+                                <span>Цена</span>
+                            </div>
+                            <div class="dishes_list">
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>Мексиканская</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+                                
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Супер-мясная</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>По-деревенски</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Ассорти</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>Мексиканская</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Супер-мясная</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>По-деревенски</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Ассорти</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>Мексиканская</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Супер-мясная</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish">
+                                    <div class="dish_name">
+                                        <h3>По-деревенски</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+            
+                                <div class="dish bg_color">
+                                    <div class="dish_name">
+                                        <h3>Ассорти</h3>
+                                        <span>Суши Люкс</span>
+                                    </div>
+            
+                                    <div class="dish_middle">
+                                        <span>400 гр</span>
+                                        <span class="sale">Акция</span>
+                                        <span class="price">449 руб.</span>
+                                    </div>
+            
+                                    <button type="button" class="menu_item_btn">Поесть</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+            
+                        <div class="square_view">
+                            <div class="items_group">
+                                    <div class="item">
+                                        <div class="title">
+                                                <h4>Куриная Барбекю</h4>
+                                                <a href="#" class="stock">Акция</a>
+                                        </div>
+                                        <div class="main_description">
+                                            <img src="img/restrunt_card/main/pizza_1.png" alt="pizza">
+                                            <div class="link_row">
+                                                <a href="#" class="rest_name">Планета суши</a>
+                                                <p class="delivery_time">45 мин</p>
+                                            </div>
+                                        </div>
+                                        <div class="text_row">
+                                            <p>
+                                                Соус Барбекю, бекон, курица, красный лук, сладкий перец, грибы, сыр моцарелла, жаренный лук
+                                            </p>
+                                        </div>
+                                        <div class="prise_row">
+                                            <p><strong>649 руб</strong>/ 30см</p>
+                                            <button class="menu_item_btn" >Поесть</button>
+                                        </div>
+            
+                                    </div>
+                            
+                                        <div class="sales_inner">
+                                            <div class="sales_header">
+                                                <div class="sales_time">
+                                                    <h2>23:39:12</h2>
+                                                    <span>До конца акции</span>
+                                                </div>
+                                            </div>
+                                            <div class="sales_image">
+                                                <img src="./img/sales/sales3.png" alt="">
+                                                <span>-50%</span>
+                                            </div>
+                                            
+                                            <div class="sales_bottom">
+                                                    <p>Скидка 50% на сет “Классический” при заказе от 1000 руб. Напиток в подарок при самовывозе.</p>
+                                                <button type="button" class="menu_item_btn">Получить</button>
+                                            </div>
+                                        </div>
+                    
+            
+                                    <div class="item">
+                                        <div class="title">
+                                                <h4>Грибная</h4>
+                                        </div>
+                                        <div class="main_description">
+                                            <img src="img/restrunt_card/main/pizza_2.png" alt="pizza">
+                                            <div class="link_row">
+                                                <a href="#" class="rest_name">Планета суши</a>
+                                                <p class="delivery_time">45 мин</p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="text_row">
+                                            <p>
+                                                Томатный соус, сыр, грибы
+                                            </p>
+                                        </div>
+                                        <div class="prise_row">
+                                            <p><strong>649 руб</strong>/ 30см</p>
+                                            <button class="menu_item_btn" >Поесть</button>
+                                        </div>
+            
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">
+                                                <h4>Грибная</h4>
+                                        </div>
+                                        <div class="main_description">
+                                            <img src="img/restrunt_card/main/cheese.png" alt="pizza">
+                                            <div class="link_row">
+                                                <a href="#" class="rest_name">Планета суши</a>
+                                                <p class="delivery_time">45 мин</p>
+                                            </div>
+                                        </div>
+                                        <!-- default select option
+                                        <div class="text_row">
+                                            <p>Выберите вес:</p>
+            
+                                                <select class="select_price">
+                                                    <option value="379">379 руб /<small>25 см</small></option>
+                                                    <option value="429">429 руб /<small>30 см</small></option>
+                                                    <option value="509">509 руб /<small>35 см</small></option>
+                                                    <option value="589">589 руб /<small>40 см</small></option>
+                                                </select>
+            
+                                        </div> -->
+                                        <p class="pizza_weight">Выберите вес:</p>
+                                        <div class="custom-select-wrapper">
+                                            <div class="custom-select">
+                                                <div class="custom-select_trigger"><span><strong>429 руб /</strong><small>30 см</small></span>
+                                                    <img src="./img/restrunt_card/main/select_arrow.png" alt="">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="custom-options">
+                                                    <span class="custom-option" data-value="379"><strong>379 руб /</strong><small>25 см</small></span>
+                                                    <span class="custom-option selected" data-value="429"><strong>429 руб /</strong><small>30 см</small></span>
+                                                    <span class="custom-option" data-value="509"><strong>509 руб /</strong><small>35 см</small></span>
+                                                    <span class="custom-option" data-value="589"><strong>589 руб /</strong><small>40 см</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prise_row">
+                                            <button class="menu_item_btn" >Поесть</button>
+                                        </div>
+            
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">
+                                                <h4>Куриная Барбекю</h4>
+                                                <a href="#" class="stock">Акция</a>
+                                        </div>
+                                        <div class="main_description">
+                                            <img src="img/restrunt_card/main/coca.png" alt="pizza">
+                                            <div class="link_row">
+                                                <a href="#" class="rest_name">Планета суши</a>
+                                                <p class="delivery_time">45 мин</p>
+                                            </div>
+                                        </div>
+                                        <div class="text_row">
+                                            <p>
+                                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.
+                                            </p>
+                                        </div>
+                                        <div class="prise_row">
+                                            <p><strong>90 руб</strong>/ 1.5л</p>
+                                            <button class="menu_item_btn" >Поесть</button>
+                                        </div>
+            
+                                    </div>
+                                    
+                                    
+                                </div>
+                        </div>
+            
+            
+             <!-------Show more(button)----------->
+            
+             <button type="button" class="menu_item_btn add">Показать еще<img src="./img/restrunt_list/add_more.svg" alt=""></button>
+                        </div>
+
+                    <div class="restrunt_menu_basket">
+                        <div class="basket_dish">
+                            <div class="dish_description">
+                                <p>Пицца</p>
+                                <h2>Куриная Барбекю</h2>
+                                <span>830 руб</span>
+                            </div>
+                            <div class="dish_counter">
+                                <div class="number">
+                                        
+                                    <span class="plus"><img src="./img/cart/plus.svg" alt=""></span>
+                                    <input type="text" value="1"/>
+                                    <span class="minus"><img src="./img/cart/minus.svg" alt=""></span>
+
+                                </div>
+
+                                <div class="dish_cancel">
+                                    <img src="./img/cart/cross.svg" alt="">
+                                </div>
+
+                          </div>
+                        </div>
+                        <div class="basket_dish">
+                            <div class="dish_description">
+                                <p>Пицца</p>
+                                <h2>Куриная Барбекю</h2>
+                                <span>830 руб</span>
+                            </div>
+                            <div class="dish_counter">
+                                <div class="number">
+                                        
+                                    <span class="plus"><img src="./img/cart/plus.svg" alt=""></span>
+                                    <input type="text" value="1"/>
+                                    <span class="minus"><img src="./img/cart/minus.svg" alt=""></span>
+
+                                </div>
+
+                                <div class="dish_cancel">
+                                    <img src="./img/cart/cross.svg" alt="">
+                                </div>
+
+                          </div>
+                        </div>
+                        <div class="restaurant_notice">
+                            <img src="./img/restrunt_card/main/warning.svg" alt="">
+                            <p>У данного ресторана минимальная сумма заказа - 1800 руб. Вам необходимо дозаказать ещё на 421 руб.</p>
+                        </div>
+                        <div class="restrunt_menu_basket_inner">
+                            <div class="total_amount">
+                                <span>Итого:</span>
+                                <span class="total_amount_value" >645 руб</span>
+                            </div>
+                            <button class="basket_btn primary">КОРЗИНА<span class="hat_bg"></span></button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                   
+                    
+                
+
+            </div>
+            
+            
+            
+        </section>
+
+        <section class="section_b">
+            <div class="container">
+                <div class="title">
+                    <img src="img/restrunt_card/main/big_van_24.svg" alt="big_van_24">
+                    <h1>Круглосуточная доставка еды</h1>
+                </div>
+                
+                <p>
+                    Служба доставки еды "ХОЧУ-ПОЕСТЬ.РФ" в городе Москва - это свыше 1000 блюд и напитков, которые привезут вам домой или в офис без наценок и дополнительной комиссии от лучших ресторанов Вашего города. Есть из чего выбрать! Вы видите то, что Вы заказываете, и точно знаете стоимость, которую нужно заплатить. Служба доставки еды "ХОЧУ-ПОЕСТЬ.РФ" в городе Москва - это свыше 1000 блюд и напитков, которые привезут вам домой или в офис без наценок и дополнительной комиссии от лучших ресторанов Вашего города. Есть из чего выбрать! Вы видите то, что Вы заказываете, и точно знаете стоимость, которую нужно заплатить.
+                </p>
+            </div>
+            
+        </section>
+        
+        
+    </main>
+    <footer class="footer" id="footer">
+        <img src="img/restrunt_card/footer/footer_big_phone.svg" alt="big_phone" class="footer_big_phone">
+        <div class="footer_content">
+            <div class="container">
+                
+
+                <div class="first_row">
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">О проекте</a> </li>
+                            <li> <a href="@">Для ресторанов и служб доставки</a> </li>
+                            <li> <a href="@">Пользовательское соглашение</a> </li>
+                            <li> <a href="@">Бонусная программа</a> </li>
+                            <li> <a href="@">Контакты</a> </li>
+                            <li> <a href="@">Блог</a> </li>
+                            <li class="footer_gift" ><a href="@">Подарки</a> </li>
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li> <a href="@">Доставка пиццы</a> </li>
+                            <li> <a href="@">Доставка суши</a> </li>
+                            <li> <a href="@">Доставка закусок</a> </li>
+                            <li> <a href="@">Здоровое питание</a> </li>
+                            <li> <a href="@">Доставка бургеров</a> </li>
+                            <li> <a href="@">Доставка десертов</a> </li>
+                            <li> <a href="@">Доставка раков</a> </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="first_row_item">
+                        
+                        <ul>
+                            <li> <a href="#">Бизнес-ланчи</a> </li>
+                            <li> <a href="#">Доставка пирогов</a> </li>
+                            <li> <a href="#">Доставка шашлыков</a> </li>
+                            <li> <a href="#">Доставка салатов</a> </li>
+                            <li> <a href="#">Доставка тортов</a> </li>
+                            <li> <a href="#">Доставка кофе</a> </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="second_row">
+                    <h2>Мы везде</h2>
+                    <div class="footer_icons">
+                        <a href="#"><img src="img/restrunt_card/footer/vk.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/facebook.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/ok.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/insta.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/youtoobe.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/twitter.svg" alt="vk_icon"></a>
+                        <a href="#"><img src="img/restrunt_card/footer/telega.svg" alt="vk_icon"></a>     
+                    </div>
+                    <p>Acheive right now</p>
+                </div>
+                <div class="third_row">
+                    <div class="column">
+                        <div class="open_map_wrapp">
+                            <a href="#" class="open_map">Открой</a>
+                        </div>
+                        <img src="img/global/wte_footer.svg" alt="" class="footer_logo">
+                        <p>В своем городе</p>
+                    </div>
+                    <div class="column">
+                        <p>Заказывайте еще быстрее<br>
+                            через мобильное приложение
+                        </p>
+                        <div class="google_apple">
+                            <a href="#"><img src="img/restrunt_card/footer/google_play.svg" alt="google_play"></a>
+                            <a href="#"><img src="img/restrunt_card/footer/app_store.svg" alt="app_store"></a>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+        <div class="footer_bottom_line">
+            <div class="container">
+                <div class="copyright">
+                    <img src="img/restrunt_card/footer/copy_right.svg" alt="">
+                    <p>"Хочу поесть" Все права защищены</p>
+                </div>
+                <div class="flags">
+                    <a href="#"><img src="img/restrunt_card/footer/ukr.svg" alt="ukraine"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/belarus.svg" alt="belarus"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/kaz.svg" alt="kz"></a>
+                    <a href="#"><img src="img/restrunt_card/footer/euro.svg" alt=""></a>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+   
+
+
+    
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>
